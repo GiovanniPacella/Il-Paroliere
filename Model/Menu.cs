@@ -19,5 +19,9 @@ namespace Il_Paroliere
         {
 
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

@@ -1,8 +1,8 @@
 namespace Il_Paroliere
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -13,6 +13,11 @@ namespace Il_Paroliere
             {
                 Application.Exit();
             }
+        }
+
+        private void bottoneGioca_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

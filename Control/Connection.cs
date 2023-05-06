@@ -13,7 +13,7 @@ namespace Il_Paroliere.Control
         static string server = "172.22.201.51";
         static string database = "Pacella_DB";
         static string Uid = "localhost";
-        static string password = "";
+        static string password = ";";
         public static MySqlConnection dataSource()
         {
             connMaster = new MySqlConnection($"server={server} database={database} Uid={Uid} password={password}");

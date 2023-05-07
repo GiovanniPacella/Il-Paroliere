@@ -12,6 +12,9 @@ namespace Il_Paroliere
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Menu());
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.Sound);
+            player.Play();
+
         }
     }
 }

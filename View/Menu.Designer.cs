@@ -29,75 +29,81 @@
         private void InitializeComponent()
         {
             bottoneUscita = new Button();
-            Titolo = new Label();
             bottoneGioca = new Button();
             bottoneClassifica = new Button();
+            Titolo = new Label();
             SuspendLayout();
             // 
             // bottoneUscita
             // 
-            bottoneUscita.BackColor = Color.FromArgb(255, 102, 0);
-            bottoneUscita.Font = new Font("Microsoft Sans Serif", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            bottoneUscita.ForeColor = Color.Black;
-            bottoneUscita.Location = new Point(242, 260);
-            bottoneUscita.Margin = new Padding(2, 1, 2, 1);
+            bottoneUscita.BackColor = Color.WhiteSmoke;
+            bottoneUscita.Font = new Font("Dugas Pro Black Normal", 48F, FontStyle.Bold, GraphicsUnit.Point);
+            bottoneUscita.ForeColor = Color.FromArgb(235, 94, 40);
+            bottoneUscita.ImageAlign = ContentAlignment.TopCenter;
+            bottoneUscita.Location = new Point(435, 216);
+            bottoneUscita.Margin = new Padding(0);
             bottoneUscita.Name = "bottoneUscita";
-            bottoneUscita.Size = new Size(159, 49);
+            bottoneUscita.Size = new Size(243, 132);
             bottoneUscita.TabIndex = 0;
             bottoneUscita.Text = "Esci";
+            bottoneUscita.TextAlign = ContentAlignment.TopCenter;
             bottoneUscita.UseVisualStyleBackColor = false;
             bottoneUscita.Click += bottoneUscita_Click;
-            // 
-            // Titolo
-            // 
-            Titolo.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point);
-            Titolo.ForeColor = Color.FromArgb(255, 102, 0);
-            Titolo.Location = new Point(6, 56);
-            Titolo.Margin = new Padding(2, 0, 2, 0);
-            Titolo.Name = "Titolo";
-            Titolo.Size = new Size(835, 73);
-            Titolo.TabIndex = 1;
-            Titolo.Text = "Il Paroliere";
-            Titolo.TextAlign = ContentAlignment.TopCenter;
             // 
             // bottoneGioca
             // 
             bottoneGioca.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            bottoneGioca.BackColor = Color.FromArgb(255, 102, 0);
-            bottoneGioca.Font = new Font("Microsoft Sans Serif", 19.875F, FontStyle.Bold, GraphicsUnit.Point);
-            bottoneGioca.ForeColor = Color.Black;
-            bottoneGioca.Location = new Point(229, 176);
-            bottoneGioca.Margin = new Padding(2, 1, 2, 1);
+            bottoneGioca.BackColor = Color.FromArgb(235, 94, 40);
+            bottoneGioca.Font = new Font("Dugas Pro Black Normal", 48F, FontStyle.Bold, GraphicsUnit.Point);
+            bottoneGioca.ForeColor = Color.WhiteSmoke;
+            bottoneGioca.Location = new Point(192, 216);
+            bottoneGioca.Margin = new Padding(0);
             bottoneGioca.Name = "bottoneGioca";
-            bottoneGioca.Size = new Size(404, 70);
+            bottoneGioca.Size = new Size(243, 132);
             bottoneGioca.TabIndex = 2;
             bottoneGioca.Text = "Gioca";
+            bottoneGioca.TextAlign = ContentAlignment.TopCenter;
             bottoneGioca.UseVisualStyleBackColor = false;
             bottoneGioca.Click += bottoneGioca_Click;
             // 
             // bottoneClassifica
             // 
-            bottoneClassifica.BackColor = Color.FromArgb(255, 102, 0);
-            bottoneClassifica.Font = new Font("Microsoft Sans Serif", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            bottoneClassifica.ForeColor = Color.Black;
-            bottoneClassifica.Location = new Point(467, 260);
+            bottoneClassifica.BackColor = Color.FromArgb(235, 94, 40);
+            bottoneClassifica.Font = new Font("Dugas Pro Black Normal", 48F, FontStyle.Bold, GraphicsUnit.Point);
+            bottoneClassifica.ForeColor = Color.WhiteSmoke;
+            bottoneClassifica.Location = new Point(192, 349);
             bottoneClassifica.Margin = new Padding(2, 1, 2, 1);
             bottoneClassifica.Name = "bottoneClassifica";
-            bottoneClassifica.Size = new Size(152, 49);
+            bottoneClassifica.Size = new Size(486, 132);
             bottoneClassifica.TabIndex = 3;
             bottoneClassifica.Text = "Classifica";
+            bottoneClassifica.TextAlign = ContentAlignment.TopCenter;
             bottoneClassifica.UseVisualStyleBackColor = false;
+            // 
+            // Titolo
+            // 
+            Titolo.Font = new Font("Dugas Pro Black Normal", 71.99999F, FontStyle.Bold, GraphicsUnit.Point);
+            Titolo.ForeColor = Color.FromArgb(235, 94, 40);
+            Titolo.Location = new Point(192, 42);
+            Titolo.Margin = new Padding(2, 0, 2, 0);
+            Titolo.Name = "Titolo";
+            Titolo.RightToLeft = RightToLeft.No;
+            Titolo.Size = new Size(510, 174);
+            Titolo.TabIndex = 1;
+            Titolo.Text = "IL PAROLIERE";
+            Titolo.TextAlign = ContentAlignment.TopCenter;
+            Titolo.UseMnemonic = false;
             // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(848, 435);
-            Controls.Add(bottoneClassifica);
+            BackColor = Color.FromArgb(64, 61, 57);
+            ClientSize = new Size(848, 602);
             Controls.Add(bottoneGioca);
-            Controls.Add(Titolo);
+            Controls.Add(bottoneClassifica);
             Controls.Add(bottoneUscita);
+            Controls.Add(Titolo);
             Margin = new Padding(2, 1, 2, 1);
             Name = "Menu";
             Text = "Il Paroliere";
@@ -107,8 +113,8 @@
         #endregion
 
         private Button bottoneUscita;
-        private Label Titolo;
         private Button bottoneGioca;
         private Button bottoneClassifica;
+        private Label Titolo;
     }
 }

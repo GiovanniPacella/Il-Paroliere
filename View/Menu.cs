@@ -9,20 +9,9 @@ namespace Il_Paroliere
             InitializeComponent();
         }
 
-        private void bottoneUscita_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Sei sicuro di voler uscire?", "Messaggio", MessageBoxButtons.OKCancel) == DialogResult.OK)
-            {
-                Application.Exit();
-            }
-        }
-
         private void bottoneGioca_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Sei sicuro di voler uscire???", "Messaggio", MessageBoxButtons.OKCancel) == DialogResult.OK)
-            {
-                Application.Exit();
-            }
+
         }
 
         private void Menu_Load(object sender, EventArgs e)
@@ -35,6 +24,14 @@ namespace Il_Paroliere
             var classifica = new Classifica();
             classifica.Closed += (s, args) => this.Close();
             classifica.Show();
+        }
+
+        private void bottoneUscita_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Sei sicuro di voler uscire?", "Messaggio", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
     }
 }

@@ -48,6 +48,7 @@
             this.bottoneUscita.Text = "Esci";
             this.bottoneUscita.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.bottoneUscita.UseVisualStyleBackColor = false;
+            this.bottoneUscita.Click += new System.EventHandler(this.bottoneUscita_Click);
             // 
             // bottoneGioca
             // 

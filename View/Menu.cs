@@ -1,3 +1,5 @@
+using Il_Paroliere.View;
+
 namespace Il_Paroliere
 {
     public partial class Menu : Form
@@ -27,5 +29,12 @@ namespace Il_Paroliere
         {
         }
 
+        private void bottoneClassifica_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var classifica = new Classifica();
+            classifica.Closed += (s, args) => this.Close();
+            classifica.Show();
+        }
     }
 }

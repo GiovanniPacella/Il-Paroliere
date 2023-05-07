@@ -32,7 +32,7 @@ namespace Il_Paroliere.Control
         /* 
             STRINGHE PER LE QUERY:
 
-            string query = "SELECT * FROM partitagpo;";
+            string query = "SELECT * FROM partitagpo ORDER BY punteggio DESC;";
             MySqlCommand cmd = new MySqlCommand(query, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
             

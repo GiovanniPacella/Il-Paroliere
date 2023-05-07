@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Il_Paroliere.View
 {
-    public partial class Classifica : Form
+    public partial class Gioco : Form
     {
-        public Classifica()
+        public Gioco()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        public Gioco(object v, object sender, EventArgs eventArgs, EventArgs e)
         {
-
         }
-
     }
+
+
 }

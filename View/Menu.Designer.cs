@@ -64,6 +64,7 @@
             bottoneGioca.Text = "Gioca";
             bottoneGioca.TextAlign = ContentAlignment.TopCenter;
             bottoneGioca.UseVisualStyleBackColor = false;
+            bottoneGioca.Click += bottoneGioca_Click;
             // 
             // bottoneClassifica
             // 
@@ -99,7 +100,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 61, 57);
-            ClientSize = new Size(848, 497);
+            ClientSize = new Size(848, 561);
             Controls.Add(bottoneGioca);
             Controls.Add(bottoneClassifica);
             Controls.Add(bottoneUscita);

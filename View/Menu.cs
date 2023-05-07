@@ -11,7 +11,10 @@ namespace Il_Paroliere
 
         private void bottoneGioca_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var gioco = new Gioco();
+            gioco.Closed += (s, args) => this.Close();
+            gioco.Show();
         }
 
         private void Menu_Load(object sender, EventArgs e)

@@ -13,7 +13,7 @@ namespace Il_Paroliere.Control
         static string server = "172.22.201.51";
         static string database = "Pacella_DB";
         static string Uid = "localhost";
-        static string password = ";";
+        static string password = "";
         public static MySqlConnection dataSource()
         {
             connMaster = new MySqlConnection($"server={server} database={database} Uid={Uid} password={password}");
@@ -29,5 +29,32 @@ namespace Il_Paroliere.Control
             dataSource();
             connMaster.Close();
         }
+        /* 
+            STRINGHE PER LE QUERY:
+
+            string query = "SELECT * FROM partitagpo;";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            
+            while(reader.Read())
+            {
+                Console.WriteLine(reader["ID"]);
+                Console.WriteLine(reader["punteggio"]);
+                Console.WriteLine(reader["paroleTrovate"]);
+
+            }
+            
+            try
+            {
+                string sql = "INSERT INTO partitagpo (punteggio, paroleTrovate) VALUES ('x', 'x')";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
+        */
     }
 }

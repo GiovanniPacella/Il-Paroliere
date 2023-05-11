@@ -10,8 +10,9 @@
 
 namespace Il_Paroliere.Properties {
     using System;
-    
-    
+    using System.Drawing;
+
+
     /// <summary>
     ///   Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
     /// </summary>
@@ -31,7 +32,9 @@ namespace Il_Paroliere.Properties {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-        
+
+        public static Image Catta { get; internal set; }
+
         /// <summary>
         ///   Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
         /// </summary>
@@ -66,46 +69,6 @@ namespace Il_Paroliere.Properties {
         internal static System.Drawing.Bitmap _1d472af838c95c32_0 {
             get {
                 object obj = ResourceManager.GetObject("1d472af838c95c32.0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Catta {
-            get {
-                object obj = ResourceManager.GetObject("Catta", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap num {
-            get {
-                object obj = ResourceManager.GetObject("num", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap num1 {
-            get {
-                object obj = ResourceManager.GetObject("num1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap num2 {
-            get {
-                object obj = ResourceManager.GetObject("num2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

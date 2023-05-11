@@ -1,3 +1,5 @@
+using System.Reflection;
+
 namespace Il_Paroliere
 {
     internal static class MainController
@@ -12,8 +14,6 @@ namespace Il_Paroliere
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Menu());
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.Sound);
-            player.Play();
 
         }
     }

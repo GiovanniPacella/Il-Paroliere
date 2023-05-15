@@ -53,6 +53,11 @@ namespace Il_Paroliere.Model
             return false;
         }
 
+        /*public bool isInDatabase(String x)
+        {
+            return 
+        }*/
+
         public bool isParolaTrovata(String x)
         {
             if (isPrimoCaratterePresente(x[0]))

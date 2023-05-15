@@ -63,9 +63,9 @@ namespace Il_Paroliere.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Catta {
+        internal static System.Drawing.Bitmap _1d472af838c95c32_0 {
             get {
-                object obj = ResourceManager.GetObject("Catta", resourceCulture);
+                object obj = ResourceManager.GetObject("1d472af838c95c32.0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Il_Paroliere.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Catta1 {
+        internal static System.Drawing.Bitmap Catta {
             get {
-                object obj = ResourceManager.GetObject("Catta1", resourceCulture);
+                object obj = ResourceManager.GetObject("Catta", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,39 +103,9 @@ namespace Il_Paroliere.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap num11 {
-            get {
-                object obj = ResourceManager.GetObject("num11", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap num2 {
             get {
                 object obj = ResourceManager.GetObject("num2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap num21 {
-            get {
-                object obj = ResourceManager.GetObject("num21", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap num3 {
-            get {
-                object obj = ResourceManager.GetObject("num3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,16 +133,6 @@ namespace Il_Paroliere.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tit11 {
-            get {
-                object obj = ResourceManager.GetObject("tit11", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap tit2 {
             get {
                 object obj = ResourceManager.GetObject("tit2", resourceCulture);
@@ -183,39 +143,9 @@ namespace Il_Paroliere.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tit21 {
-            get {
-                object obj = ResourceManager.GetObject("tit21", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap tit3 {
             get {
                 object obj = ResourceManager.GetObject("tit3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tit31 {
-            get {
-                object obj = ResourceManager.GetObject("tit31", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tit4 {
-            get {
-                object obj = ResourceManager.GetObject("tit4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

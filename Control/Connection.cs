@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Common;
 
 namespace Il_Paroliere.Control
 {
@@ -29,6 +30,12 @@ namespace Il_Paroliere.Control
             dataSource();
             connMaster.Close();
         }
+
+        /*public Result queryGenerica()
+        {
+            return new Result();
+        }*/
+
         /* 
             STRINGHE PER LE QUERY:
 

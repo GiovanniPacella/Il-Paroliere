@@ -1,4 +1,5 @@
 using Il_Paroliere.View;
+using System.Media;
 
 namespace Il_Paroliere
 {
@@ -7,6 +8,9 @@ namespace Il_Paroliere
         public Menu()
         {
             InitializeComponent();
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.title);
+            sound.Play();
+
         }
 
         private void bottoneGioca_Click(object sender, EventArgs e)

@@ -145,4 +145,34 @@
   <data name="Catta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Catta.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Catta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Catta.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\num1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\num2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\num.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tit11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tit21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tit31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tit3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tit4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_1d472af838c95c32_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1d472af838c95c32.0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

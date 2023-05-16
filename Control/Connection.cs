@@ -21,16 +21,18 @@ namespace Il_Paroliere.Control
             connMaster = new MySqlConnection("Server="+server+"; Database="+database+"; Uid="+Uid+"; Password="+password+";");
             return connMaster;
         }
-        public void connOpen()
+        public bool connOpen()
         {
             try
             {
                 dataSource();
                 connMaster.Open();
+                return true;
             }
             catch(Exception ex)
             {
                 Console.WriteLine(ex.ToString());
+                return false;
             }
         }
         public void connClose()
@@ -62,6 +64,7 @@ namespace Il_Paroliere.Control
             }
             catch (Exception ex)
             {
+                ex.ToString();
                 verifica = false;
             }
             return verifica;

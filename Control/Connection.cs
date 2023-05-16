@@ -53,10 +53,18 @@ namespace Il_Paroliere.Control
             return reader;
         }
 
-        public void queryGenerica(string query)
+        public bool queryGenerica(string query)
         {
-            MySqlCommand cmd = new MySqlCommand(query, connMaster);
-            return;
+            bool verifica = true;
+            try 
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connMaster);
+            }
+            catch (Exception ex)
+            {
+                verifica = false;
+            }
+            return verifica;
         }
 
         /* 

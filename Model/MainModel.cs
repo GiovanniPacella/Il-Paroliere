@@ -10,7 +10,7 @@ namespace Il_Paroliere.Model
     {
         private static int nRigheColonne = 5;
         private char [] lettere = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
-        private char[][] Board = new char[nRigheColonne][];
+        private char[,] Board = new char[nRigheColonne,nRigheColonne];
         private String parolaTrovata;
 
         private int[][] posizioniCaratteri = new int[25][];
@@ -23,7 +23,7 @@ namespace Il_Paroliere.Model
             Random rnd = new Random();
             for (int i = 0; i < nRigheColonne; i++){
                 for (int j = 0; j < nRigheColonne; j++){
-                    Board[i][j] = lettere[rnd.Next(0,lettere.Length)];
+                    Board[i,j] = lettere[rnd.Next(0,lettere.Length)];
                 }
             }
         }
@@ -31,7 +31,7 @@ namespace Il_Paroliere.Model
         public void stampaBoard(){
             for (int i = 0; i < nRigheColonne; i++){
                 for (int j = 0; j < nRigheColonne; j++){
-                    Console.WriteLine(this.Board[i][j]+ " ");
+                    Console.WriteLine(this.Board[i,j]+ " ");
                 }
                 Console.WriteLine("\n");
             }
@@ -44,7 +44,7 @@ namespace Il_Paroliere.Model
             {
                 for (int j = 0; j < nRigheColonne; j++)
                 {
-                    if (this.Board[i][j]== x)
+                    if (this.Board[i,j]== x)
                     {
                         return true;
                     }
@@ -91,7 +91,7 @@ namespace Il_Paroliere.Model
             this.parolaTrovata = parolaTrovata;
         }
 
-        public char[][] getBoard()
+        public char[,] getBoard()
         {
             return this.Board;
         }

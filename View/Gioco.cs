@@ -17,7 +17,8 @@ namespace Il_Paroliere.View
         {
             InitializeComponent();
             MainModel Model = new MainModel();
-            char[][] board = Model.getBoard();
+            Model.creaBoard();            
+            char[,] board = Model.getBoard();
         }
 
         public Gioco(object v, object sender, EventArgs eventArgs, EventArgs e)

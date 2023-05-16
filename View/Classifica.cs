@@ -38,5 +38,12 @@ namespace Il_Paroliere.View
 
         }
 
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            var menu = new Menu();
+            menu.Closed += (s, args) => this.Close();
+            menu.Show();
+        }
     }
 }

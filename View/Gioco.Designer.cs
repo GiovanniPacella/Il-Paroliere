@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             Titolo = new Label();
             button1 = new Button();
             button2 = new Button();
@@ -55,12 +56,13 @@
             button24 = new Button();
             button25 = new Button();
             button26 = new Button();
-            richTextBox1 = new RichTextBox();
+            Ricerca = new RichTextBox();
             Timer = new Label();
             PuntiT = new Label();
             Punti = new Label();
             Trovate = new Label();
             Test = new ListBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // Titolo
@@ -392,16 +394,16 @@
             button26.Text = "Invia";
             button26.UseVisualStyleBackColor = false;
             // 
-            // richTextBox1
+            // Ricerca
             // 
-            richTextBox1.BackColor = Color.FromArgb(255, 224, 192);
-            richTextBox1.BorderStyle = BorderStyle.None;
-            richTextBox1.Font = new Font("Bauhaus 93", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
-            richTextBox1.Location = new Point(74, 614);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(399, 43);
-            richTextBox1.TabIndex = 29;
-            richTextBox1.Text = "";
+            Ricerca.BackColor = Color.FromArgb(255, 224, 192);
+            Ricerca.BorderStyle = BorderStyle.None;
+            Ricerca.Font = new Font("Bauhaus 93", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+            Ricerca.Location = new Point(74, 614);
+            Ricerca.Name = "Ricerca";
+            Ricerca.Size = new Size(399, 43);
+            Ricerca.TabIndex = 29;
+            Ricerca.Text = "";
             // 
             // Timer
             // 
@@ -472,6 +474,11 @@
             Test.Size = new Size(466, 300);
             Test.TabIndex = 35;
             // 
+            // timer1
+            // 
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            // 
             // Gioco
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -484,7 +491,7 @@
             Controls.Add(PuntiT);
             Controls.Add(Timer);
             Controls.Add(button26);
-            Controls.Add(richTextBox1);
+            Controls.Add(Ricerca);
             Controls.Add(button21);
             Controls.Add(button22);
             Controls.Add(button23);
@@ -516,7 +523,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Gioco";
-            Text = "Form1";
+            Text = "Gioco";
             ResumeLayout(false);
         }
 
@@ -549,11 +556,12 @@
         private Button button24;
         private Button button25;
         private Button button26;
-        private RichTextBox richTextBox1;
+        private RichTextBox Ricerca;
         private Label Timer;
         private Label PuntiT;
         private Label Punti;
         private Label Trovate;
         private ListBox Test;
+        private System.Windows.Forms.Timer timer1;
     }
 }

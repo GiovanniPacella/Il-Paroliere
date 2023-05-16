@@ -28,9 +28,9 @@ namespace Il_Paroliere
                 if (con.connOpen())
                 {
                     this.Hide();
-                    var gioco = new Gioco();
-                    gioco.Closed += (s, args) => this.Close();
-                    gioco.Show();
+                    var dati = new Dati();
+                    dati.Closed += (s, args) => this.Close();
+                    dati.Show();
                 }
                 else
                 {

@@ -21,8 +21,8 @@ namespace Il_Paroliere
 
         private void bottoneGioca_Click(object sender, EventArgs e)
         {
+            Connection con = new Connection();
             Thread thread = new Thread(() => {
-                Connection con = new Connection();
 
                 if (con.connOpen())
                 {
@@ -33,7 +33,7 @@ namespace Il_Paroliere
                 }
                 else
                 {
-                    MessageBox.Show("Connessione al database non disponibile!", "Errore connessione", MessageBoxButtons.OK);
+                    MessageBox.Show("Connessione al database non riuscita!", "Errore connessione", MessageBoxButtons.OK);
                 }
             });
             thread.Start();
@@ -52,7 +52,7 @@ namespace Il_Paroliere
                 }
                 else
                 {
-                    MessageBox.Show("Connessione al database non disponibile!", "Errore connessione", MessageBoxButtons.OK);
+                    MessageBox.Show("Connessione al database non riuscita!", "Errore connessione", MessageBoxButtons.OK);
                 }
             });
             thread.Start();

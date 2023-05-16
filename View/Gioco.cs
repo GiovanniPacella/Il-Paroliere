@@ -13,7 +13,7 @@ namespace Il_Paroliere.View
 {
     public partial class Gioco : Form
     {
-        int val=60;
+        int val = 60;
         public Gioco()
         {
             InitializeComponent();
@@ -55,7 +55,7 @@ namespace Il_Paroliere.View
         private void timer1_Tick(object sender, EventArgs e)
         {
             int tempo = val--;
-            Timer.Text = "00:"+tempo.ToString();
+            Timer.Text = "00:" + tempo.ToString();
             //Precario
         }
     }

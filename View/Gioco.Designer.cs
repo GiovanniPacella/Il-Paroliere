@@ -60,8 +60,8 @@
             Timer = new Label();
             PuntiT = new Label();
             Punti = new Label();
-            Trovate = new Label();
-            Test = new ListBox();
+            Tittrov = new Label();
+            Trovate = new ListBox();
             timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
@@ -447,32 +447,32 @@
             Punti.TextAlign = ContentAlignment.MiddleCenter;
             Punti.UseMnemonic = false;
             // 
+            // Tittrov
+            // 
+            Tittrov.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            Tittrov.ForeColor = Color.FromArgb(235, 94, 40);
+            Tittrov.Location = new Point(666, 269);
+            Tittrov.Margin = new Padding(2, 0, 2, 0);
+            Tittrov.Name = "Tittrov";
+            Tittrov.RightToLeft = RightToLeft.No;
+            Tittrov.Size = new Size(210, 75);
+            Tittrov.TabIndex = 34;
+            Tittrov.Text = "Corrette";
+            Tittrov.TextAlign = ContentAlignment.MiddleCenter;
+            Tittrov.UseMnemonic = false;
+            // 
             // Trovate
             // 
-            Trovate.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            Trovate.BackColor = Color.Linen;
+            Trovate.BorderStyle = BorderStyle.None;
+            Trovate.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             Trovate.ForeColor = Color.FromArgb(235, 94, 40);
-            Trovate.Location = new Point(666, 269);
-            Trovate.Margin = new Padding(2, 0, 2, 0);
+            Trovate.FormattingEnabled = true;
+            Trovate.ItemHeight = 30;
+            Trovate.Location = new Point(541, 347);
             Trovate.Name = "Trovate";
-            Trovate.RightToLeft = RightToLeft.No;
-            Trovate.Size = new Size(210, 75);
-            Trovate.TabIndex = 34;
-            Trovate.Text = "Corrette";
-            Trovate.TextAlign = ContentAlignment.MiddleCenter;
-            Trovate.UseMnemonic = false;
-            // 
-            // Test
-            // 
-            Test.BackColor = Color.Linen;
-            Test.BorderStyle = BorderStyle.None;
-            Test.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Test.ForeColor = Color.FromArgb(235, 94, 40);
-            Test.FormattingEnabled = true;
-            Test.ItemHeight = 30;
-            Test.Location = new Point(541, 347);
-            Test.Name = "Test";
-            Test.Size = new Size(466, 300);
-            Test.TabIndex = 35;
+            Trovate.Size = new Size(466, 300);
+            Trovate.TabIndex = 35;
             // 
             // timer1
             // 
@@ -485,8 +485,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Linen;
             ClientSize = new Size(1064, 811);
-            Controls.Add(Test);
             Controls.Add(Trovate);
+            Controls.Add(Tittrov);
             Controls.Add(Punti);
             Controls.Add(PuntiT);
             Controls.Add(Timer);
@@ -560,8 +560,8 @@
         private Label Timer;
         private Label PuntiT;
         private Label Punti;
-        private Label Trovate;
-        private ListBox Test;
+        private Label Tittrov;
+        private ListBox Trovate;
         private System.Windows.Forms.Timer timer1;
     }
 }

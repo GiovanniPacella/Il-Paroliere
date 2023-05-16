@@ -73,7 +73,7 @@
             Titolo.Margin = new Padding(2, 0, 2, 0);
             Titolo.Name = "Titolo";
             Titolo.RightToLeft = RightToLeft.No;
-            Titolo.Size = new Size(1064, 112);
+            Titolo.Size = new Size(983, 112);
             Titolo.TabIndex = 2;
             Titolo.Text = "IL PAROLIERE";
             Titolo.TextAlign = ContentAlignment.MiddleCenter;
@@ -409,7 +409,7 @@
             // 
             Timer.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
             Timer.ForeColor = Color.FromArgb(235, 94, 40);
-            Timer.Location = new Point(541, 136);
+            Timer.Location = new Point(508, 130);
             Timer.Margin = new Padding(2, 0, 2, 0);
             Timer.Name = "Timer";
             Timer.RightToLeft = RightToLeft.No;
@@ -423,7 +423,7 @@
             // 
             PuntiT.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
             PuntiT.ForeColor = Color.FromArgb(235, 94, 40);
-            PuntiT.Location = new Point(797, 111);
+            PuntiT.Location = new Point(793, 112);
             PuntiT.Margin = new Padding(2, 0, 2, 0);
             PuntiT.Name = "PuntiT";
             PuntiT.RightToLeft = RightToLeft.No;
@@ -437,7 +437,7 @@
             // 
             Punti.Font = new Font("Bauhaus 93", 48F, FontStyle.Regular, GraphicsUnit.Point);
             Punti.ForeColor = Color.FromArgb(235, 94, 40);
-            Punti.Location = new Point(797, 169);
+            Punti.Location = new Point(784, 167);
             Punti.Margin = new Padding(2, 0, 2, 0);
             Punti.Name = "Punti";
             Punti.RightToLeft = RightToLeft.No;
@@ -451,11 +451,11 @@
             // 
             Tittrov.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
             Tittrov.ForeColor = Color.FromArgb(235, 94, 40);
-            Tittrov.Location = new Point(666, 269);
+            Tittrov.Location = new Point(487, 279);
             Tittrov.Margin = new Padding(2, 0, 2, 0);
             Tittrov.Name = "Tittrov";
             Tittrov.RightToLeft = RightToLeft.No;
-            Tittrov.Size = new Size(210, 75);
+            Tittrov.Size = new Size(466, 75);
             Tittrov.TabIndex = 34;
             Tittrov.Text = "Corrette";
             Tittrov.TextAlign = ContentAlignment.MiddleCenter;
@@ -469,7 +469,7 @@
             Trovate.ForeColor = Color.FromArgb(235, 94, 40);
             Trovate.FormattingEnabled = true;
             Trovate.ItemHeight = 30;
-            Trovate.Location = new Point(541, 347);
+            Trovate.Location = new Point(487, 357);
             Trovate.Name = "Trovate";
             Trovate.Size = new Size(466, 300);
             Trovate.TabIndex = 35;
@@ -484,7 +484,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Linen;
-            ClientSize = new Size(1064, 811);
+            ClientSize = new Size(984, 761);
             Controls.Add(Trovate);
             Controls.Add(Tittrov);
             Controls.Add(Punti);

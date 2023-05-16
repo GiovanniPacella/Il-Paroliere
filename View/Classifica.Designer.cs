@@ -292,6 +292,9 @@
             Controls.Add(label3);
             Controls.Add(label1);
             ForeColor = Color.FromArgb(235, 94, 40);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Classifica";
             Text = "Classifica";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

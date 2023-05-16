@@ -21,7 +21,8 @@ namespace Il_Paroliere
 
         private void bottoneGioca_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() => {
+            Thread thread = new Thread(() =>
+            {
                 Connection con = new Connection();
 
                 if (con.connOpen())
@@ -41,10 +42,11 @@ namespace Il_Paroliere
 
         private void bottoneClassifica_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() => {
+            Thread thread = new Thread(() =>
+            {
                 Connection con = new Connection();
                 if (con.connOpen())
-                { 
+                {
                     this.Hide();
                     var classifica = new Classifica();
                     classifica.Closed += (s, args) => this.Close();

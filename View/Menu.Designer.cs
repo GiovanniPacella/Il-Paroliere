@@ -102,7 +102,10 @@
             Controls.Add(bottoneClassifica);
             Controls.Add(bottoneUscita);
             Controls.Add(Titolo);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(2, 1, 2, 1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Menu";
             Text = "Il Paroliere";
             ResumeLayout(false);

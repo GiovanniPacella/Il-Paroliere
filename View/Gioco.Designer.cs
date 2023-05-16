@@ -512,6 +512,9 @@
             Controls.Add(button1);
             Controls.Add(Titolo);
             ForeColor = Color.WhiteSmoke;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Gioco";
             Text = "Form1";
             ResumeLayout(false);

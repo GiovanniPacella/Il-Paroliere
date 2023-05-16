@@ -59,9 +59,8 @@ namespace Il_Paroliere.Model
         {
             Connection con = new Connection();
             con.connOpen();
-            string query = "SELECT * FROM partitagpo ;";
-            MySqlDataReader reader = con.querySelect(query);
-            if ()
+            string query = "SELECT * FROM parole WHERE parola='"+x+"' ;";
+            if (con.queryGenerica(query))
             {
                 this.parolaTrovata = x;
                 return true;
@@ -75,30 +74,21 @@ namespace Il_Paroliere.Model
 
         public bool isParolaTrovata(String x)
         {
-            if (isPrimoCaratterePresente(x[0]))
+            if (isInDatabase(x) && isCorretta(x))
             {
-                for (int i = 1; i < x.Length; i++)
-                { // Controllo
-                    if (!verificaCarattere(x[i]))
-                    {
-                        return false;
-                    }
-                }
                 return true;
             }
-            return false;
-
+            else
+            {
+                return false;
+            }
         }
 
 
-        public bool verificaCarattere(char x)
+   
+        public bool isCorretta(String x)
         {
-            //DA COMPLETARE
-            if ((x + 1) > nRigheColonne)
-            {
-                return true;
-            }
-            return false;
+            return true;
         }
 
         public void setParolaTrovata(String parolaTrovata)

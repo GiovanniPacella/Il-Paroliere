@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Il_Paroliere.Control;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -53,10 +55,23 @@ namespace Il_Paroliere.Model
             return false;
         }
 
-        /*public bool isInDatabase(String x)
+        public bool isInDatabase(String x)
         {
-            return 
-        }*/
+            Connection con = new Connection();
+            con.connOpen();
+            string query = "SELECT * FROM partitagpo ;";
+            MySqlDataReader reader = con.querySelect(query);
+            if ()
+            {
+                this.parolaTrovata = x;
+                return true;
+            }
+            else
+            {
+                this.parolaTrovata = "";
+                return false;
+            }
+        }
 
         public bool isParolaTrovata(String x)
         {
@@ -95,6 +110,8 @@ namespace Il_Paroliere.Model
         {
             return this.Board;
         }
+
+        
 
 
 

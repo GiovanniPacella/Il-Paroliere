@@ -28,503 +28,531 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            Titolo = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
-            button16 = new Button();
-            button17 = new Button();
-            button18 = new Button();
-            button19 = new Button();
-            button20 = new Button();
-            button21 = new Button();
-            button22 = new Button();
-            button23 = new Button();
-            button24 = new Button();
-            button25 = new Button();
-            button26 = new Button();
-            Ricerca = new RichTextBox();
-            Timer = new Label();
-            PuntiT = new Label();
-            Punti = new Label();
-            Tittrov = new Label();
-            Trovate = new ListBox();
-            timer1 = new System.Windows.Forms.Timer(components);
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.Titolo = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.Ricerca = new System.Windows.Forms.RichTextBox();
+            this.Timer = new System.Windows.Forms.Label();
+            this.PuntiT = new System.Windows.Forms.Label();
+            this.Punti = new System.Windows.Forms.Label();
+            this.Tittrov = new System.Windows.Forms.Label();
+            this.Trovate = new System.Windows.Forms.ListBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.SuspendLayout();
             // 
             // Titolo
             // 
-            Titolo.Font = new Font("Bauhaus 93", 72F, FontStyle.Bold, GraphicsUnit.Point);
-            Titolo.ForeColor = Color.FromArgb(235, 94, 40);
-            Titolo.Location = new Point(1, 0);
-            Titolo.Margin = new Padding(2, 0, 2, 0);
-            Titolo.Name = "Titolo";
-            Titolo.RightToLeft = RightToLeft.No;
-            Titolo.Size = new Size(983, 112);
-            Titolo.TabIndex = 2;
-            Titolo.Text = "IL PAROLIERE";
-            Titolo.TextAlign = ContentAlignment.MiddleCenter;
-            Titolo.UseMnemonic = false;
+            this.Titolo.Font = new System.Drawing.Font("Bauhaus 93", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Titolo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.Titolo.Location = new System.Drawing.Point(2, 0);
+            this.Titolo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Titolo.Name = "Titolo";
+            this.Titolo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Titolo.Size = new System.Drawing.Size(1826, 239);
+            this.Titolo.TabIndex = 2;
+            this.Titolo.Text = "IL PAROLIERE";
+            this.Titolo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Titolo.UseMnemonic = false;
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(235, 94, 40);
-            button1.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.WhiteSmoke;
-            button1.Location = new Point(74, 188);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 75);
-            button1.TabIndex = 3;
-            button1.Text = "1";
-            button1.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button1.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(137, 401);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(139, 160);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "1";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            button2.BackColor = Color.WhiteSmoke;
-            button2.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.FromArgb(235, 94, 40);
-            button2.Location = new Point(155, 188);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 75);
-            button2.TabIndex = 4;
-            button2.Text = "2";
-            button2.UseVisualStyleBackColor = false;
+            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button2.Location = new System.Drawing.Point(288, 401);
+            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(139, 160);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "2";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
-            button3.BackColor = Color.FromArgb(235, 94, 40);
-            button3.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.WhiteSmoke;
-            button3.Location = new Point(236, 188);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 75);
-            button3.TabIndex = 5;
-            button3.Text = "3";
-            button3.UseVisualStyleBackColor = false;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button3.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button3.Location = new System.Drawing.Point(438, 401);
+            this.button3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(139, 160);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "3";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
-            button4.BackColor = Color.WhiteSmoke;
-            button4.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.ForeColor = Color.FromArgb(235, 94, 40);
-            button4.Location = new Point(317, 188);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 75);
-            button4.TabIndex = 6;
-            button4.Text = "4";
-            button4.UseVisualStyleBackColor = false;
+            this.button4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button4.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button4.Location = new System.Drawing.Point(589, 401);
+            this.button4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(139, 160);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "4";
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
-            button5.BackColor = Color.FromArgb(235, 94, 40);
-            button5.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.ForeColor = Color.WhiteSmoke;
-            button5.Location = new Point(398, 188);
-            button5.Name = "button5";
-            button5.Size = new Size(75, 75);
-            button5.TabIndex = 7;
-            button5.Text = "5";
-            button5.UseVisualStyleBackColor = false;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button5.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button5.Location = new System.Drawing.Point(739, 401);
+            this.button5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(139, 160);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "5";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
-            button6.BackColor = Color.WhiteSmoke;
-            button6.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button6.ForeColor = Color.FromArgb(235, 94, 40);
-            button6.Location = new Point(398, 269);
-            button6.Name = "button6";
-            button6.Size = new Size(75, 75);
-            button6.TabIndex = 12;
-            button6.Text = "10";
-            button6.UseVisualStyleBackColor = false;
+            this.button6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button6.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button6.Location = new System.Drawing.Point(739, 574);
+            this.button6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(139, 160);
+            this.button6.TabIndex = 12;
+            this.button6.Text = "10";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // button7
             // 
-            button7.BackColor = Color.FromArgb(235, 94, 40);
-            button7.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button7.ForeColor = Color.WhiteSmoke;
-            button7.Location = new Point(317, 269);
-            button7.Name = "button7";
-            button7.Size = new Size(75, 75);
-            button7.TabIndex = 11;
-            button7.Text = "9";
-            button7.UseVisualStyleBackColor = false;
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button7.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button7.Location = new System.Drawing.Point(589, 574);
+            this.button7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(139, 160);
+            this.button7.TabIndex = 11;
+            this.button7.Text = "9";
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
-            button8.BackColor = Color.WhiteSmoke;
-            button8.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button8.ForeColor = Color.FromArgb(235, 94, 40);
-            button8.Location = new Point(236, 269);
-            button8.Name = "button8";
-            button8.Size = new Size(75, 75);
-            button8.TabIndex = 10;
-            button8.Text = "8";
-            button8.UseVisualStyleBackColor = false;
+            this.button8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button8.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button8.Location = new System.Drawing.Point(438, 574);
+            this.button8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(139, 160);
+            this.button8.TabIndex = 10;
+            this.button8.Text = "8";
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // button9
             // 
-            button9.BackColor = Color.FromArgb(235, 94, 40);
-            button9.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button9.ForeColor = Color.WhiteSmoke;
-            button9.Location = new Point(155, 269);
-            button9.Name = "button9";
-            button9.Size = new Size(75, 75);
-            button9.TabIndex = 9;
-            button9.Text = "7";
-            button9.UseVisualStyleBackColor = false;
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button9.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button9.Location = new System.Drawing.Point(288, 574);
+            this.button9.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(139, 160);
+            this.button9.TabIndex = 9;
+            this.button9.Text = "7";
+            this.button9.UseVisualStyleBackColor = false;
             // 
             // button10
             // 
-            button10.BackColor = Color.WhiteSmoke;
-            button10.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button10.ForeColor = Color.FromArgb(235, 94, 40);
-            button10.Location = new Point(74, 269);
-            button10.Name = "button10";
-            button10.Size = new Size(75, 75);
-            button10.TabIndex = 8;
-            button10.Text = "6";
-            button10.UseVisualStyleBackColor = false;
+            this.button10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button10.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button10.Location = new System.Drawing.Point(137, 574);
+            this.button10.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(139, 160);
+            this.button10.TabIndex = 8;
+            this.button10.Text = "6";
+            this.button10.UseVisualStyleBackColor = false;
             // 
             // button11
             // 
-            button11.BackColor = Color.FromArgb(235, 94, 40);
-            button11.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button11.ForeColor = Color.WhiteSmoke;
-            button11.Location = new Point(398, 349);
-            button11.Name = "button11";
-            button11.Size = new Size(75, 75);
-            button11.TabIndex = 17;
-            button11.Text = "15";
-            button11.UseVisualStyleBackColor = false;
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button11.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button11.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button11.Location = new System.Drawing.Point(739, 745);
+            this.button11.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(139, 160);
+            this.button11.TabIndex = 17;
+            this.button11.Text = "15";
+            this.button11.UseVisualStyleBackColor = false;
             // 
             // button12
             // 
-            button12.BackColor = Color.WhiteSmoke;
-            button12.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button12.ForeColor = Color.FromArgb(235, 94, 40);
-            button12.Location = new Point(317, 349);
-            button12.Name = "button12";
-            button12.Size = new Size(75, 75);
-            button12.TabIndex = 16;
-            button12.Text = "14";
-            button12.UseVisualStyleBackColor = false;
+            this.button12.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button12.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button12.Location = new System.Drawing.Point(589, 745);
+            this.button12.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(139, 160);
+            this.button12.TabIndex = 16;
+            this.button12.Text = "14";
+            this.button12.UseVisualStyleBackColor = false;
             // 
             // button13
             // 
-            button13.BackColor = Color.FromArgb(235, 94, 40);
-            button13.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button13.ForeColor = Color.WhiteSmoke;
-            button13.Location = new Point(236, 349);
-            button13.Name = "button13";
-            button13.Size = new Size(75, 75);
-            button13.TabIndex = 15;
-            button13.Text = "13";
-            button13.UseVisualStyleBackColor = false;
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button13.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button13.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button13.Location = new System.Drawing.Point(438, 745);
+            this.button13.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(139, 160);
+            this.button13.TabIndex = 15;
+            this.button13.Text = "13";
+            this.button13.UseVisualStyleBackColor = false;
             // 
             // button14
             // 
-            button14.BackColor = Color.WhiteSmoke;
-            button14.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button14.ForeColor = Color.FromArgb(235, 94, 40);
-            button14.Location = new Point(155, 349);
-            button14.Name = "button14";
-            button14.Size = new Size(75, 75);
-            button14.TabIndex = 14;
-            button14.Text = "12";
-            button14.UseVisualStyleBackColor = false;
+            this.button14.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button14.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button14.Location = new System.Drawing.Point(288, 745);
+            this.button14.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(139, 160);
+            this.button14.TabIndex = 14;
+            this.button14.Text = "12";
+            this.button14.UseVisualStyleBackColor = false;
             // 
             // button15
             // 
-            button15.BackColor = Color.FromArgb(235, 94, 40);
-            button15.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button15.ForeColor = Color.WhiteSmoke;
-            button15.Location = new Point(74, 349);
-            button15.Name = "button15";
-            button15.Size = new Size(75, 75);
-            button15.TabIndex = 13;
-            button15.Text = "11";
-            button15.UseVisualStyleBackColor = false;
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button15.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button15.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button15.Location = new System.Drawing.Point(137, 745);
+            this.button15.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(139, 160);
+            this.button15.TabIndex = 13;
+            this.button15.Text = "11";
+            this.button15.UseVisualStyleBackColor = false;
             // 
             // button16
             // 
-            button16.BackColor = Color.WhiteSmoke;
-            button16.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button16.ForeColor = Color.FromArgb(235, 94, 40);
-            button16.Location = new Point(398, 430);
-            button16.Name = "button16";
-            button16.Size = new Size(75, 75);
-            button16.TabIndex = 22;
-            button16.Text = "20";
-            button16.UseVisualStyleBackColor = false;
+            this.button16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button16.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button16.Location = new System.Drawing.Point(739, 917);
+            this.button16.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(139, 160);
+            this.button16.TabIndex = 22;
+            this.button16.Text = "20";
+            this.button16.UseVisualStyleBackColor = false;
             // 
             // button17
             // 
-            button17.BackColor = Color.FromArgb(235, 94, 40);
-            button17.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button17.ForeColor = Color.WhiteSmoke;
-            button17.Location = new Point(317, 430);
-            button17.Name = "button17";
-            button17.Size = new Size(75, 75);
-            button17.TabIndex = 21;
-            button17.Text = "19";
-            button17.UseVisualStyleBackColor = false;
+            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button17.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button17.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button17.Location = new System.Drawing.Point(589, 917);
+            this.button17.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(139, 160);
+            this.button17.TabIndex = 21;
+            this.button17.Text = "19";
+            this.button17.UseVisualStyleBackColor = false;
             // 
             // button18
             // 
-            button18.BackColor = Color.WhiteSmoke;
-            button18.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button18.ForeColor = Color.FromArgb(235, 94, 40);
-            button18.Location = new Point(236, 430);
-            button18.Name = "button18";
-            button18.Size = new Size(75, 75);
-            button18.TabIndex = 20;
-            button18.Text = "18";
-            button18.UseVisualStyleBackColor = false;
+            this.button18.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button18.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button18.Location = new System.Drawing.Point(438, 917);
+            this.button18.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(139, 160);
+            this.button18.TabIndex = 20;
+            this.button18.Text = "18";
+            this.button18.UseVisualStyleBackColor = false;
             // 
             // button19
             // 
-            button19.BackColor = Color.FromArgb(235, 94, 40);
-            button19.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button19.ForeColor = Color.WhiteSmoke;
-            button19.Location = new Point(155, 430);
-            button19.Name = "button19";
-            button19.Size = new Size(75, 75);
-            button19.TabIndex = 19;
-            button19.Text = "17";
-            button19.UseVisualStyleBackColor = false;
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button19.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button19.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button19.Location = new System.Drawing.Point(288, 917);
+            this.button19.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(139, 160);
+            this.button19.TabIndex = 19;
+            this.button19.Text = "17";
+            this.button19.UseVisualStyleBackColor = false;
             // 
             // button20
             // 
-            button20.BackColor = Color.WhiteSmoke;
-            button20.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button20.ForeColor = Color.FromArgb(235, 94, 40);
-            button20.Location = new Point(74, 430);
-            button20.Name = "button20";
-            button20.Size = new Size(75, 75);
-            button20.TabIndex = 18;
-            button20.Text = "16";
-            button20.UseVisualStyleBackColor = false;
+            this.button20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button20.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button20.Location = new System.Drawing.Point(137, 917);
+            this.button20.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(139, 160);
+            this.button20.TabIndex = 18;
+            this.button20.Text = "16";
+            this.button20.UseVisualStyleBackColor = false;
             // 
             // button21
             // 
-            button21.BackColor = Color.FromArgb(235, 94, 40);
-            button21.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button21.ForeColor = Color.WhiteSmoke;
-            button21.ImageAlign = ContentAlignment.TopCenter;
-            button21.Location = new Point(398, 511);
-            button21.Name = "button21";
-            button21.Size = new Size(75, 75);
-            button21.TabIndex = 27;
-            button21.Text = "25";
-            button21.UseVisualStyleBackColor = false;
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button21.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button21.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button21.Location = new System.Drawing.Point(739, 1090);
+            this.button21.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(139, 160);
+            this.button21.TabIndex = 27;
+            this.button21.Text = "25";
+            this.button21.UseVisualStyleBackColor = false;
             // 
             // button22
             // 
-            button22.BackColor = Color.WhiteSmoke;
-            button22.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button22.ForeColor = Color.FromArgb(235, 94, 40);
-            button22.Location = new Point(317, 511);
-            button22.Name = "button22";
-            button22.Size = new Size(75, 75);
-            button22.TabIndex = 26;
-            button22.Text = "24";
-            button22.UseVisualStyleBackColor = false;
+            this.button22.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button22.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button22.Location = new System.Drawing.Point(589, 1090);
+            this.button22.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(139, 160);
+            this.button22.TabIndex = 26;
+            this.button22.Text = "24";
+            this.button22.UseVisualStyleBackColor = false;
             // 
             // button23
             // 
-            button23.BackColor = Color.FromArgb(235, 94, 40);
-            button23.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button23.ForeColor = Color.WhiteSmoke;
-            button23.Location = new Point(236, 511);
-            button23.Name = "button23";
-            button23.Size = new Size(75, 75);
-            button23.TabIndex = 25;
-            button23.Text = "23";
-            button23.UseVisualStyleBackColor = false;
+            this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button23.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button23.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button23.Location = new System.Drawing.Point(438, 1090);
+            this.button23.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(139, 160);
+            this.button23.TabIndex = 25;
+            this.button23.Text = "23";
+            this.button23.UseVisualStyleBackColor = false;
             // 
             // button24
             // 
-            button24.BackColor = Color.WhiteSmoke;
-            button24.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button24.ForeColor = Color.FromArgb(235, 94, 40);
-            button24.Location = new Point(155, 511);
-            button24.Name = "button24";
-            button24.Size = new Size(75, 75);
-            button24.TabIndex = 24;
-            button24.Text = "22";
-            button24.UseVisualStyleBackColor = false;
+            this.button24.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button24.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button24.Location = new System.Drawing.Point(288, 1090);
+            this.button24.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(139, 160);
+            this.button24.TabIndex = 24;
+            this.button24.Text = "22";
+            this.button24.UseVisualStyleBackColor = false;
             // 
             // button25
             // 
-            button25.BackColor = Color.FromArgb(235, 94, 40);
-            button25.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button25.ForeColor = Color.WhiteSmoke;
-            button25.Location = new Point(74, 511);
-            button25.Name = "button25";
-            button25.Size = new Size(75, 75);
-            button25.TabIndex = 23;
-            button25.Text = "21";
-            button25.UseVisualStyleBackColor = false;
+            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button25.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button25.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button25.Location = new System.Drawing.Point(137, 1090);
+            this.button25.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(139, 160);
+            this.button25.TabIndex = 23;
+            this.button25.Text = "21";
+            this.button25.UseVisualStyleBackColor = false;
             // 
             // button26
             // 
-            button26.BackColor = Color.Linen;
-            button26.Font = new Font("Bauhaus 93", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button26.ForeColor = Color.FromArgb(235, 94, 40);
-            button26.ImageAlign = ContentAlignment.TopCenter;
-            button26.Location = new Point(216, 675);
-            button26.Margin = new Padding(0);
-            button26.Name = "button26";
-            button26.Size = new Size(113, 79);
-            button26.TabIndex = 30;
-            button26.Text = "Invia";
-            button26.UseVisualStyleBackColor = false;
+            this.button26.BackColor = System.Drawing.Color.Linen;
+            this.button26.Font = new System.Drawing.Font("Bauhaus 93", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.button26.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button26.Location = new System.Drawing.Point(401, 1440);
+            this.button26.Margin = new System.Windows.Forms.Padding(0);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(210, 169);
+            this.button26.TabIndex = 30;
+            this.button26.Text = "Invia";
+            this.button26.UseVisualStyleBackColor = false;
             // 
             // Ricerca
             // 
-            Ricerca.BackColor = Color.FromArgb(255, 224, 192);
-            Ricerca.BorderStyle = BorderStyle.None;
-            Ricerca.Font = new Font("Bauhaus 93", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
-            Ricerca.Location = new Point(74, 614);
-            Ricerca.Name = "Ricerca";
-            Ricerca.Size = new Size(399, 43);
-            Ricerca.TabIndex = 29;
-            Ricerca.Text = "";
+            this.Ricerca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.Ricerca.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Ricerca.Font = new System.Drawing.Font("Bauhaus 93", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Ricerca.Location = new System.Drawing.Point(137, 1310);
+            this.Ricerca.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Ricerca.Name = "Ricerca";
+            this.Ricerca.Size = new System.Drawing.Size(741, 92);
+            this.Ricerca.TabIndex = 29;
+            this.Ricerca.Text = "";
             // 
             // Timer
             // 
-            Timer.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            Timer.ForeColor = Color.FromArgb(235, 94, 40);
-            Timer.Location = new Point(508, 130);
-            Timer.Margin = new Padding(2, 0, 2, 0);
-            Timer.Name = "Timer";
-            Timer.RightToLeft = RightToLeft.No;
-            Timer.Size = new Size(210, 112);
-            Timer.TabIndex = 31;
-            Timer.Text = "00:00";
-            Timer.TextAlign = ContentAlignment.MiddleCenter;
-            Timer.UseMnemonic = false;
+            this.Timer.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Timer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.Timer.Location = new System.Drawing.Point(943, 277);
+            this.Timer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Timer.Name = "Timer";
+            this.Timer.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Timer.Size = new System.Drawing.Size(390, 239);
+            this.Timer.TabIndex = 31;
+            this.Timer.Text = "00:00";
+            this.Timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Timer.UseMnemonic = false;
             // 
             // PuntiT
             // 
-            PuntiT.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            PuntiT.ForeColor = Color.FromArgb(235, 94, 40);
-            PuntiT.Location = new Point(793, 112);
-            PuntiT.Margin = new Padding(2, 0, 2, 0);
-            PuntiT.Name = "PuntiT";
-            PuntiT.RightToLeft = RightToLeft.No;
-            PuntiT.Size = new Size(210, 75);
-            PuntiT.TabIndex = 32;
-            PuntiT.Text = "Punti";
-            PuntiT.TextAlign = ContentAlignment.MiddleCenter;
-            PuntiT.UseMnemonic = false;
+            this.PuntiT.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PuntiT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.PuntiT.Location = new System.Drawing.Point(1456, 239);
+            this.PuntiT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PuntiT.Name = "PuntiT";
+            this.PuntiT.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.PuntiT.Size = new System.Drawing.Size(390, 160);
+            this.PuntiT.TabIndex = 32;
+            this.PuntiT.Text = "Punti";
+            this.PuntiT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PuntiT.UseMnemonic = false;
             // 
             // Punti
             // 
-            Punti.Font = new Font("Bauhaus 93", 48F, FontStyle.Regular, GraphicsUnit.Point);
-            Punti.ForeColor = Color.FromArgb(235, 94, 40);
-            Punti.Location = new Point(784, 167);
-            Punti.Margin = new Padding(2, 0, 2, 0);
-            Punti.Name = "Punti";
-            Punti.RightToLeft = RightToLeft.No;
-            Punti.Size = new Size(210, 112);
-            Punti.TabIndex = 33;
-            Punti.Text = "000";
-            Punti.TextAlign = ContentAlignment.MiddleCenter;
-            Punti.UseMnemonic = false;
+            this.Punti.Font = new System.Drawing.Font("Bauhaus 93", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Punti.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.Punti.Location = new System.Drawing.Point(1456, 356);
+            this.Punti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Punti.Name = "Punti";
+            this.Punti.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Punti.Size = new System.Drawing.Size(390, 239);
+            this.Punti.TabIndex = 33;
+            this.Punti.Text = "000";
+            this.Punti.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Punti.UseMnemonic = false;
             // 
             // Tittrov
             // 
-            Tittrov.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            Tittrov.ForeColor = Color.FromArgb(235, 94, 40);
-            Tittrov.Location = new Point(487, 279);
-            Tittrov.Margin = new Padding(2, 0, 2, 0);
-            Tittrov.Name = "Tittrov";
-            Tittrov.RightToLeft = RightToLeft.No;
-            Tittrov.Size = new Size(466, 75);
-            Tittrov.TabIndex = 34;
-            Tittrov.Text = "Corrette";
-            Tittrov.TextAlign = ContentAlignment.MiddleCenter;
-            Tittrov.UseMnemonic = false;
+            this.Tittrov.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Tittrov.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.Tittrov.Location = new System.Drawing.Point(904, 595);
+            this.Tittrov.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Tittrov.Name = "Tittrov";
+            this.Tittrov.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Tittrov.Size = new System.Drawing.Size(865, 160);
+            this.Tittrov.TabIndex = 34;
+            this.Tittrov.Text = "Corrette";
+            this.Tittrov.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Tittrov.UseMnemonic = false;
             // 
             // Trovate
             // 
-            Trovate.BackColor = Color.Linen;
-            Trovate.BorderStyle = BorderStyle.None;
-            Trovate.Font = new Font("Bauhaus 93", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Trovate.ForeColor = Color.FromArgb(235, 94, 40);
-            Trovate.FormattingEnabled = true;
-            Trovate.ItemHeight = 30;
-            Trovate.Location = new Point(487, 357);
-            Trovate.Name = "Trovate";
-            Trovate.Size = new Size(466, 300);
-            Trovate.TabIndex = 35;
+            this.Trovate.BackColor = System.Drawing.Color.Linen;
+            this.Trovate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Trovate.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Trovate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.Trovate.FormattingEnabled = true;
+            this.Trovate.ItemHeight = 62;
+            this.Trovate.Location = new System.Drawing.Point(904, 762);
+            this.Trovate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Trovate.Name = "Trovate";
+            this.Trovate.Size = new System.Drawing.Size(865, 620);
+            this.Trovate.TabIndex = 35;
             // 
             // timer1
             // 
-            timer1.Interval = 1000;
-            timer1.Tick += timer1_Tick;
+            this.timer1.Interval = 1000;
             // 
             // Gioco
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Linen;
-            ClientSize = new Size(984, 761);
-            Controls.Add(Trovate);
-            Controls.Add(Tittrov);
-            Controls.Add(Punti);
-            Controls.Add(PuntiT);
-            Controls.Add(Timer);
-            Controls.Add(button26);
-            Controls.Add(Ricerca);
-            Controls.Add(button21);
-            Controls.Add(button22);
-            Controls.Add(button23);
-            Controls.Add(button24);
-            Controls.Add(button25);
-            Controls.Add(button16);
-            Controls.Add(button17);
-            Controls.Add(button18);
-            Controls.Add(button19);
-            Controls.Add(button20);
-            Controls.Add(button11);
-            Controls.Add(button12);
-            Controls.Add(button13);
-            Controls.Add(button14);
-            Controls.Add(button15);
-            Controls.Add(button6);
-            Controls.Add(button7);
-            Controls.Add(button8);
-            Controls.Add(button9);
-            Controls.Add(button10);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(Titolo);
-            ForeColor = Color.WhiteSmoke;
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "Gioco";
-            Text = "Gioco";
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Linen;
+            this.ClientSize = new System.Drawing.Size(1827, 1623);
+            this.Controls.Add(this.Trovate);
+            this.Controls.Add(this.Tittrov);
+            this.Controls.Add(this.Punti);
+            this.Controls.Add(this.PuntiT);
+            this.Controls.Add(this.Timer);
+            this.Controls.Add(this.button26);
+            this.Controls.Add(this.Ricerca);
+            this.Controls.Add(this.button21);
+            this.Controls.Add(this.button22);
+            this.Controls.Add(this.button23);
+            this.Controls.Add(this.button24);
+            this.Controls.Add(this.button25);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.button17);
+            this.Controls.Add(this.button18);
+            this.Controls.Add(this.button19);
+            this.Controls.Add(this.button20);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Titolo);
+            this.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Gioco";
+            this.Text = "Gioco";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

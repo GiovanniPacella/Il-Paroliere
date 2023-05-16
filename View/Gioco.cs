@@ -58,6 +58,22 @@ namespace Il_Paroliere.View
             Timer.Text = "00:" + tempo.ToString();
             //Precario
         }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            MainModel Model = new MainModel();
+            Model.getBoard();
+            var parolaInserita = Ricerca.Text;
+            var isParolaCorretta = Model.isCorretta(parolaInserita);
+            if(isParolaCorretta)
+            {
+                Trovate.Items.Add(parolaInserita);
+            }
+            else
+            {
+                MessageBox.Show("Parola non trovata!", "Errore", MessageBoxButtons.OK);
+            }
+        }
     }
 
 

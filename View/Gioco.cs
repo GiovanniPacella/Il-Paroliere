@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Il_Paroliere.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace Il_Paroliere.View
         public Gioco()
         {
             InitializeComponent();
+            MainModel Model = new MainModel();
+            char[][] board = Model.getBoard();
         }
 
         public Gioco(object v, object sender, EventArgs eventArgs, EventArgs e)

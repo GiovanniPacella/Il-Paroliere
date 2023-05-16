@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,35 +14,56 @@ namespace Il_Paroliere.Control
         public static MySqlConnection connMaster = new MySqlConnection();
         static string server = "172.22.201.51";
         static string database = "Pacella_DB";
-        static string Uid = "localhost";
-        static string password = "";
+        static string Uid = "utentedb";
+        static string password = "Cobi_2022_$";
         public static MySqlConnection dataSource()
         {
-            connMaster = new MySqlConnection($"server={server} database={database} Uid={Uid} password={password}");
+            connMaster = new MySqlConnection("Server="+server+"; Database="+database+"; Uid="+Uid+"; Password="+password+";");
             return connMaster;
         }
         public void connOpen()
         {
-            dataSource();
-            connMaster.Open();
+            try
+            {
+                dataSource();
+                connMaster.Open();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
         public void connClose()
         {
-            dataSource();
-            connMaster.Close();
+            try
+            {
+                dataSource();
+                connMaster.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
 
-        /*public Result queryGenerica()
+        public MySqlDataReader querySelect(string query)
         {
-            return new Result();
-        }*/
+            MySqlCommand cmd = new MySqlCommand(query, connMaster);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            return reader;
+        }
+
+        public void queryGenerica(string query)
+        {
+            MySqlCommand cmd = new MySqlCommand(query, connMaster);
+            return;
+        }
 
         /* 
             STRINGHE PER LE QUERY:
 
             string query = "SELECT * FROM partitagpo ORDER BY punteggio DESC;";
-            MySqlCommand cmd = new MySqlCommand(query, conn);
-            MySqlDataReader reader = cmd.ExecuteReader();
+            
             
             while(reader.Read())
             {

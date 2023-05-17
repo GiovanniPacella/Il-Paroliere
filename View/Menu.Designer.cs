@@ -28,87 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            bottoneUscita = new Button();
-            bottoneGioca = new Button();
-            bottoneClassifica = new Button();
-            Titolo = new Label();
-            SuspendLayout();
+            this.bottoneUscita = new System.Windows.Forms.Button();
+            this.bottoneGioca = new System.Windows.Forms.Button();
+            this.bottoneClassifica = new System.Windows.Forms.Button();
+            this.Titolo = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // bottoneUscita
             // 
-            bottoneUscita.BackColor = Color.WhiteSmoke;
-            bottoneUscita.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            bottoneUscita.ForeColor = Color.FromArgb(235, 94, 40);
-            bottoneUscita.ImageAlign = ContentAlignment.TopCenter;
-            bottoneUscita.Location = new Point(442, 183);
-            bottoneUscita.Margin = new Padding(0);
-            bottoneUscita.Name = "bottoneUscita";
-            bottoneUscita.Size = new Size(208, 109);
-            bottoneUscita.TabIndex = 0;
-            bottoneUscita.Text = "Esci";
-            bottoneUscita.UseVisualStyleBackColor = false;
-            bottoneUscita.Click += bottoneUscita_Click;
+            this.bottoneUscita.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bottoneUscita.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bottoneUscita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.bottoneUscita.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bottoneUscita.Location = new System.Drawing.Point(821, 390);
+            this.bottoneUscita.Margin = new System.Windows.Forms.Padding(0);
+            this.bottoneUscita.Name = "bottoneUscita";
+            this.bottoneUscita.Size = new System.Drawing.Size(386, 233);
+            this.bottoneUscita.TabIndex = 0;
+            this.bottoneUscita.Text = "Esci";
+            this.bottoneUscita.UseVisualStyleBackColor = false;
+            this.bottoneUscita.Click += new System.EventHandler(this.bottoneUscita_Click);
             // 
             // bottoneGioca
             // 
-            bottoneGioca.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            bottoneGioca.BackColor = Color.FromArgb(235, 94, 40);
-            bottoneGioca.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            bottoneGioca.ForeColor = Color.WhiteSmoke;
-            bottoneGioca.Location = new Point(199, 183);
-            bottoneGioca.Margin = new Padding(0);
-            bottoneGioca.Name = "bottoneGioca";
-            bottoneGioca.Size = new Size(208, 109);
-            bottoneGioca.TabIndex = 2;
-            bottoneGioca.Text = "Gioca";
-            bottoneGioca.UseVisualStyleBackColor = false;
-            bottoneGioca.Click += bottoneGioca_Click;
+            this.bottoneGioca.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bottoneGioca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.bottoneGioca.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bottoneGioca.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bottoneGioca.Location = new System.Drawing.Point(370, 390);
+            this.bottoneGioca.Margin = new System.Windows.Forms.Padding(0);
+            this.bottoneGioca.Name = "bottoneGioca";
+            this.bottoneGioca.Size = new System.Drawing.Size(386, 233);
+            this.bottoneGioca.TabIndex = 2;
+            this.bottoneGioca.Text = "Gioca";
+            this.bottoneGioca.UseVisualStyleBackColor = false;
+            this.bottoneGioca.Click += new System.EventHandler(this.bottoneGioca_Click);
             // 
             // bottoneClassifica
             // 
-            bottoneClassifica.BackColor = Color.FromArgb(235, 94, 40);
-            bottoneClassifica.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            bottoneClassifica.ForeColor = Color.WhiteSmoke;
-            bottoneClassifica.Location = new Point(199, 313);
-            bottoneClassifica.Margin = new Padding(2, 1, 2, 1);
-            bottoneClassifica.Name = "bottoneClassifica";
-            bottoneClassifica.Size = new Size(451, 109);
-            bottoneClassifica.TabIndex = 3;
-            bottoneClassifica.Text = "Classifica";
-            bottoneClassifica.UseVisualStyleBackColor = false;
-            bottoneClassifica.Click += bottoneClassifica_Click;
+            this.bottoneClassifica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.bottoneClassifica.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bottoneClassifica.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bottoneClassifica.Location = new System.Drawing.Point(370, 668);
+            this.bottoneClassifica.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.bottoneClassifica.Name = "bottoneClassifica";
+            this.bottoneClassifica.Size = new System.Drawing.Size(838, 233);
+            this.bottoneClassifica.TabIndex = 3;
+            this.bottoneClassifica.Text = "Classifica";
+            this.bottoneClassifica.UseVisualStyleBackColor = false;
+            this.bottoneClassifica.Click += new System.EventHandler(this.bottoneClassifica_Click);
             // 
             // Titolo
             // 
-            Titolo.Font = new Font("Bauhaus 93", 48F, FontStyle.Regular, GraphicsUnit.Point);
-            Titolo.ForeColor = Color.FromArgb(235, 94, 40);
-            Titolo.Location = new Point(199, 9);
-            Titolo.Margin = new Padding(2, 0, 2, 0);
-            Titolo.Name = "Titolo";
-            Titolo.RightToLeft = RightToLeft.No;
-            Titolo.Size = new Size(451, 174);
-            Titolo.TabIndex = 1;
-            Titolo.Text = "IL PAROLIERE";
-            Titolo.TextAlign = ContentAlignment.MiddleCenter;
-            Titolo.UseMnemonic = false;
+            this.Titolo.Font = new System.Drawing.Font("Bauhaus 93", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Titolo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.Titolo.Location = new System.Drawing.Point(13, 19);
+            this.Titolo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Titolo.Name = "Titolo";
+            this.Titolo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Titolo.Size = new System.Drawing.Size(1532, 371);
+            this.Titolo.TabIndex = 1;
+            this.Titolo.Text = "JUICE WORD";
+            this.Titolo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Titolo.UseMnemonic = false;
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Linen;
-            ClientSize = new Size(839, 511);
-            Controls.Add(bottoneGioca);
-            Controls.Add(bottoneClassifica);
-            Controls.Add(bottoneUscita);
-            Controls.Add(Titolo);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(2, 1, 2, 1);
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "Menu";
-            Text = "Il Paroliere";
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Linen;
+            this.ClientSize = new System.Drawing.Size(1558, 1090);
+            this.Controls.Add(this.bottoneGioca);
+            this.Controls.Add(this.bottoneClassifica);
+            this.Controls.Add(this.bottoneUscita);
+            this.Controls.Add(this.Titolo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Menu";
+            this.Text = "Il Paroliere";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -19,21 +19,6 @@ namespace Il_Paroliere
         {
         }
 
-        private void bottoneGioca_Click(object sender, EventArgs e)
-        {
-            Connection con = new Connection();
-            if (con.connOpen())
-            {
-                this.Hide();
-                var dati = new Dati();
-                dati.Closed += (s, args) => this.Close();
-                dati.Show();
-            }
-            else
-            {
-                MessageBox.Show("Connessione al database non disponibile!", "Errore connessione", MessageBoxButtons.OK);
-            }
-        }
 
         private void bottoneClassifica_Click(object sender, EventArgs e)
         {
@@ -49,7 +34,6 @@ namespace Il_Paroliere
             {
                 MessageBox.Show("Connessione al database non disponibile!", "Errore connessione", MessageBoxButtons.OK);
             }
-            
         }
 
         private void bottoneUscita_Click(object sender, EventArgs e)
@@ -57,6 +41,22 @@ namespace Il_Paroliere
             if (MessageBox.Show("Sei sicuro di voler uscire?", "Uscita", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 Application.Exit();
+            }
+        }
+
+        private void bottoneGioca_Click(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            if (con.connOpen())
+            {
+                this.Hide();
+                var dati = new Dati();
+                dati.Closed += (s, args) => this.Close();
+                dati.Show();
+            }
+            else
+            {
+                MessageBox.Show("Connessione al database non disponibile!", "Errore connessione", MessageBoxButtons.OK);
             }
         }
     }

@@ -57,17 +57,16 @@ namespace Il_Paroliere.Control
 
         public bool queryGenerica(string query)
         {
-            bool verifica = true;
             try 
             {
                 MySqlCommand cmd = new MySqlCommand(query, connMaster);
+                return true;
             }
             catch (Exception ex)
             {
                 ex.ToString();
-                verifica = false;
+                return false;
             }
-            return verifica;
         }
 
         /* 

@@ -28,17 +28,14 @@ namespace Il_Paroliere.View
                 Console.WriteLine("Punteggio: " + reader["punteggio"]);
                 Console.WriteLine("Parole trovate: " + reader["paroleTrovate"]);
 
+                label10.Text = reader["nomeGiocatore"] + " - Punti: " + reader["punteggio"]+" - Parole: "+ reader["paroleTrovate"];
+
             }
             con.connClose();
 
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             var menu = new Menu();

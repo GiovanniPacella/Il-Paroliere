@@ -63,9 +63,9 @@ namespace Il_Paroliere.View
         {
             MainModel Model = new MainModel();
             Model.getBoard();
-            var parolaInserita = Ricerca.Text;
-            var isParolaCorretta = Model.isCorretta(parolaInserita);
-            if(isParolaCorretta)
+            string parolaInserita = Ricerca.Text;
+            bool isParolaCorretta = Model.isCorretta(parolaInserita);
+            if (isParolaCorretta)
             {
                 Trovate.Items.Add(parolaInserita);
             }

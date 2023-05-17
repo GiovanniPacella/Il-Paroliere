@@ -85,7 +85,7 @@
             this.button1.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button1.Location = new System.Drawing.Point(137, 401);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 160);
             this.button1.TabIndex = 3;
@@ -98,7 +98,7 @@
             this.button2.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button2.Location = new System.Drawing.Point(288, 401);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button2.Margin = new System.Windows.Forms.Padding(6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(139, 160);
             this.button2.TabIndex = 4;
@@ -111,7 +111,7 @@
             this.button3.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button3.Location = new System.Drawing.Point(438, 401);
-            this.button3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button3.Margin = new System.Windows.Forms.Padding(6);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(139, 160);
             this.button3.TabIndex = 5;
@@ -124,7 +124,7 @@
             this.button4.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button4.Location = new System.Drawing.Point(589, 401);
-            this.button4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button4.Margin = new System.Windows.Forms.Padding(6);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(139, 160);
             this.button4.TabIndex = 6;
@@ -137,7 +137,7 @@
             this.button5.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button5.Location = new System.Drawing.Point(739, 401);
-            this.button5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button5.Margin = new System.Windows.Forms.Padding(6);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(139, 160);
             this.button5.TabIndex = 7;
@@ -150,7 +150,7 @@
             this.button6.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button6.Location = new System.Drawing.Point(739, 574);
-            this.button6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button6.Margin = new System.Windows.Forms.Padding(6);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(139, 160);
             this.button6.TabIndex = 12;
@@ -163,7 +163,7 @@
             this.button7.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button7.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button7.Location = new System.Drawing.Point(589, 574);
-            this.button7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button7.Margin = new System.Windows.Forms.Padding(6);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(139, 160);
             this.button7.TabIndex = 11;
@@ -176,7 +176,7 @@
             this.button8.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button8.Location = new System.Drawing.Point(438, 574);
-            this.button8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button8.Margin = new System.Windows.Forms.Padding(6);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(139, 160);
             this.button8.TabIndex = 10;
@@ -189,7 +189,7 @@
             this.button9.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button9.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button9.Location = new System.Drawing.Point(288, 574);
-            this.button9.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button9.Margin = new System.Windows.Forms.Padding(6);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(139, 160);
             this.button9.TabIndex = 9;
@@ -202,7 +202,7 @@
             this.button10.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button10.Location = new System.Drawing.Point(137, 574);
-            this.button10.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button10.Margin = new System.Windows.Forms.Padding(6);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(139, 160);
             this.button10.TabIndex = 8;
@@ -215,7 +215,7 @@
             this.button11.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button11.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button11.Location = new System.Drawing.Point(739, 745);
-            this.button11.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button11.Margin = new System.Windows.Forms.Padding(6);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(139, 160);
             this.button11.TabIndex = 17;
@@ -228,7 +228,7 @@
             this.button12.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button12.Location = new System.Drawing.Point(589, 745);
-            this.button12.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button12.Margin = new System.Windows.Forms.Padding(6);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(139, 160);
             this.button12.TabIndex = 16;
@@ -241,7 +241,7 @@
             this.button13.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button13.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button13.Location = new System.Drawing.Point(438, 745);
-            this.button13.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button13.Margin = new System.Windows.Forms.Padding(6);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(139, 160);
             this.button13.TabIndex = 15;
@@ -254,7 +254,7 @@
             this.button14.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button14.Location = new System.Drawing.Point(288, 745);
-            this.button14.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button14.Margin = new System.Windows.Forms.Padding(6);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(139, 160);
             this.button14.TabIndex = 14;
@@ -267,7 +267,7 @@
             this.button15.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button15.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button15.Location = new System.Drawing.Point(137, 745);
-            this.button15.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button15.Margin = new System.Windows.Forms.Padding(6);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(139, 160);
             this.button15.TabIndex = 13;
@@ -280,7 +280,7 @@
             this.button16.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button16.Location = new System.Drawing.Point(739, 917);
-            this.button16.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button16.Margin = new System.Windows.Forms.Padding(6);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(139, 160);
             this.button16.TabIndex = 22;
@@ -293,7 +293,7 @@
             this.button17.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button17.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button17.Location = new System.Drawing.Point(589, 917);
-            this.button17.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button17.Margin = new System.Windows.Forms.Padding(6);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(139, 160);
             this.button17.TabIndex = 21;
@@ -306,7 +306,7 @@
             this.button18.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button18.Location = new System.Drawing.Point(438, 917);
-            this.button18.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button18.Margin = new System.Windows.Forms.Padding(6);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(139, 160);
             this.button18.TabIndex = 20;
@@ -319,7 +319,7 @@
             this.button19.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button19.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button19.Location = new System.Drawing.Point(288, 917);
-            this.button19.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button19.Margin = new System.Windows.Forms.Padding(6);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(139, 160);
             this.button19.TabIndex = 19;
@@ -332,7 +332,7 @@
             this.button20.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button20.Location = new System.Drawing.Point(137, 917);
-            this.button20.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button20.Margin = new System.Windows.Forms.Padding(6);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(139, 160);
             this.button20.TabIndex = 18;
@@ -346,7 +346,7 @@
             this.button21.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button21.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button21.Location = new System.Drawing.Point(739, 1090);
-            this.button21.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button21.Margin = new System.Windows.Forms.Padding(6);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(139, 160);
             this.button21.TabIndex = 27;
@@ -359,7 +359,7 @@
             this.button22.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button22.Location = new System.Drawing.Point(589, 1090);
-            this.button22.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button22.Margin = new System.Windows.Forms.Padding(6);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(139, 160);
             this.button22.TabIndex = 26;
@@ -372,7 +372,7 @@
             this.button23.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button23.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button23.Location = new System.Drawing.Point(438, 1090);
-            this.button23.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button23.Margin = new System.Windows.Forms.Padding(6);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(139, 160);
             this.button23.TabIndex = 25;
@@ -385,7 +385,7 @@
             this.button24.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button24.Location = new System.Drawing.Point(288, 1090);
-            this.button24.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button24.Margin = new System.Windows.Forms.Padding(6);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(139, 160);
             this.button24.TabIndex = 24;
@@ -398,7 +398,7 @@
             this.button25.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button25.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button25.Location = new System.Drawing.Point(137, 1090);
-            this.button25.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button25.Margin = new System.Windows.Forms.Padding(6);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(139, 160);
             this.button25.TabIndex = 23;
@@ -418,6 +418,7 @@
             this.button26.TabIndex = 30;
             this.button26.Text = "Invia";
             this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // Ricerca
             // 
@@ -425,7 +426,7 @@
             this.Ricerca.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Ricerca.Font = new System.Drawing.Font("Bauhaus 93", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Ricerca.Location = new System.Drawing.Point(137, 1310);
-            this.Ricerca.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Ricerca.Margin = new System.Windows.Forms.Padding(6);
             this.Ricerca.Name = "Ricerca";
             this.Ricerca.Size = new System.Drawing.Size(741, 92);
             this.Ricerca.TabIndex = 29;
@@ -496,7 +497,7 @@
             this.Trovate.FormattingEnabled = true;
             this.Trovate.ItemHeight = 62;
             this.Trovate.Location = new System.Drawing.Point(904, 762);
-            this.Trovate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Trovate.Margin = new System.Windows.Forms.Padding(6);
             this.Trovate.Name = "Trovate";
             this.Trovate.Size = new System.Drawing.Size(865, 620);
             this.Trovate.TabIndex = 35;
@@ -546,7 +547,7 @@
             this.Controls.Add(this.Titolo);
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gioco";

@@ -101,6 +101,9 @@
             this.Controls.Add(this.bottoneUscita);
             this.Controls.Add(this.Punti);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FinePartita";
             this.Text = "Fine";
             this.ResumeLayout(false);

@@ -13,38 +13,37 @@ namespace Il_Paroliere.View
 {
     public partial class Gioco : Form
     {
+        MainModel Model = new MainModel();
         int val = 60;
         public Gioco()
         {
             InitializeComponent();
-            MainModel Model = new MainModel();
-            Model.creaBoard();
             char[,] board = Model.getBoard();
             button1.Text = Char.ToString(board[0, 0]);
             button2.Text = Char.ToString(board[0, 1]);
             button3.Text = Char.ToString(board[0, 2]);
             button4.Text = Char.ToString(board[0, 3]);
             button5.Text = Char.ToString(board[0, 4]);
-            button6.Text = Char.ToString(board[1, 0]);
-            button7.Text = Char.ToString(board[1, 1]);
+            button10.Text = Char.ToString(board[1, 0]);
+            button9.Text = Char.ToString(board[1, 1]);
             button8.Text = Char.ToString(board[1, 2]);
-            button9.Text = Char.ToString(board[1, 3]);
-            button10.Text = Char.ToString(board[1, 4]);
-            button11.Text = Char.ToString(board[2, 0]);
-            button12.Text = Char.ToString(board[2, 1]);
+            button7.Text = Char.ToString(board[1, 3]);
+            button6.Text = Char.ToString(board[1, 4]);
+            button15.Text = Char.ToString(board[2, 0]);
+            button14.Text = Char.ToString(board[2, 1]);
             button13.Text = Char.ToString(board[2, 2]);
-            button14.Text = Char.ToString(board[2, 3]);
-            button15.Text = Char.ToString(board[2, 4]);
-            button16.Text = Char.ToString(board[3, 0]);
-            button17.Text = Char.ToString(board[3, 1]);
+            button12.Text = Char.ToString(board[2, 3]);
+            button11.Text = Char.ToString(board[2, 4]);
+            button20.Text = Char.ToString(board[3, 0]);
+            button19.Text = Char.ToString(board[3, 1]);
             button18.Text = Char.ToString(board[3, 2]);
-            button19.Text = Char.ToString(board[3, 3]);
-            button20.Text = Char.ToString(board[3, 4]);
-            button21.Text = Char.ToString(board[4, 0]);
-            button22.Text = Char.ToString(board[4, 1]);
+            button17.Text = Char.ToString(board[3, 3]);
+            button16.Text = Char.ToString(board[3, 4]);
+            button25.Text = Char.ToString(board[4, 0]);
+            button24.Text = Char.ToString(board[4, 1]);
             button23.Text = Char.ToString(board[4, 2]);
-            button24.Text = Char.ToString(board[4, 3]);
-            button25.Text = Char.ToString(board[4, 4]);
+            button22.Text = Char.ToString(board[4, 3]);
+            button21.Text = Char.ToString(board[4, 4]);
             timer1.Start();
         }
 
@@ -54,8 +53,6 @@ namespace Il_Paroliere.View
 
         private void button26_Click(object sender, EventArgs e)
         {
-            MainModel Model = new MainModel();
-            Model.getBoard();
             string parolaInserita = Ricerca.Text;
             bool isParolaCorretta = Model.isCorretta(parolaInserita);
             if (isParolaCorretta)
@@ -76,7 +73,7 @@ namespace Il_Paroliere.View
             //Precario
         }
 
-      
+
     }
 
 

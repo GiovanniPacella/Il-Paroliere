@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,9 +16,11 @@ namespace Il_Paroliere.Model
         private char [] lettere = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
         private char[,] Board = new char[nRigheColonne,nRigheColonne];
         private String parolaTrovata;
-        private string[] paroleTrovate;
+        List<string> paroleTrovate = new List<string>();
 
-        public MainModel() { }
+        public MainModel() {
+            creaBoard();
+        }
 
         public void creaBoard()
         {
@@ -57,7 +60,7 @@ namespace Il_Paroliere.Model
             string query = "SELECT * FROM parole WHERE parola='" + x + "' ;";
             if (con.queryGenerica(query))
             {
-                this.parolaTrovata = x;
+                this.parolaTrovata = x.ToUpper();
                 return true;
             }
             else
@@ -69,11 +72,15 @@ namespace Il_Paroliere.Model
 
         public bool isCorretta(String x)
         {
+            this.parolaTrovata = x;
             if (isPrimoCaratterePresente(x[0]) && !isParolaGiàTrovata(x))
             {
                 return true;
             }
-            return false;
+            else
+            {
+                return false;
+            }
         }
 
         public bool isPrimoCaratterePresente(char x)
@@ -85,7 +92,7 @@ namespace Il_Paroliere.Model
                     if (this.Board[i, j] == x)
                     {
                         string[] posizioniTrovate = new string[25];
-                        posizioniTrovate[0]=(i+j).ToString();
+                        posizioniTrovate[0]=(i.ToString()+j.ToString());
                         return cercaAdiacenti(i, j, Char.ToString(x), 1, posizioniTrovate);
                     }
                 }
@@ -107,7 +114,7 @@ namespace Il_Paroliere.Model
 
         public bool isParolaGiàTrovata(string x)
         {
-            for(int i = 0; i < paroleTrovate.Length; i++)
+            for(int i = 0; i < paroleTrovate.Count; i++)
             {
                 if (paroleTrovate[i] == x)
                 {
@@ -119,83 +126,90 @@ namespace Il_Paroliere.Model
 
 
 
-        public bool cercaAdiacenti(int x, int y, String parolaCostruita, int indiceParola, string[] posizioniTrovate)
+        public bool cercaAdiacenti(int y, int x, String parolaCostruita, int indiceParola, string[] posizioniTrovate)
         {
             if (parolaTrovata == parolaCostruita)
             {
+                paroleTrovate.Add(parolaTrovata);
                 return true;
             }
             char carattereDaCercare = parolaTrovata[indiceParola];
 
             //Lettera destra centrale
-            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x+1,y).ToString()) && x<4 && this.Board[x+1, y] == carattereDaCercare)
+            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, y.ToString()+ (x + 1).ToString()) && x<4 && this.Board[y,x+1] == carattereDaCercare)
             {
-                posizioniTrovate[indiceParola] = (x + 1, y).ToString();
+                posizioniTrovate[indiceParola] = y.ToString() + (x + 1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
-                return cercaAdiacenti(x+1, y, parolaCostruita, indiceParola+1, posizioniTrovate);
+                return cercaAdiacenti(y, x+1, parolaCostruita, indiceParola+1, posizioniTrovate);
             }
 
             //Lettera sinistra centrale
-            if(!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x - 1, y).ToString()) && x >0 && this.Board[x-1, y] == carattereDaCercare)
+            if(!isCarattereGiàPresente(posizioniTrovate, indiceParola, y.ToString()+ (x - 1).ToString()) && x >0 && this.Board[y, x-1] == carattereDaCercare)
             {
-                posizioniTrovate[indiceParola] = (x - 1, y).ToString();
+                posizioniTrovate[indiceParola] = y.ToString() + (x - 1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
-                return cercaAdiacenti(x-1, y, parolaCostruita, indiceParola + 1, posizioniTrovate);
+                return cercaAdiacenti(y, x-1, parolaCostruita, indiceParola + 1, posizioniTrovate);
             }
 
             //Lettera superiore sinistra
-            if(!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x - 1, y-1).ToString()) && x >0 && y>0 && this.Board[x-1, y-1] == carattereDaCercare)
+            if(!isCarattereGiàPresente(posizioniTrovate, indiceParola, (y-1).ToString()+ (x - 1).ToString()) && x >0 && y>0 && this.Board[y-1, x-1] == carattereDaCercare)
             {
-                posizioniTrovate[indiceParola] = (x - 1, y-1).ToString();
+                posizioniTrovate[indiceParola] = (y - 1).ToString() + (x - 1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
-                return cercaAdiacenti(x-1, y-1, parolaCostruita, indiceParola + 1, posizioniTrovate);
+                return cercaAdiacenti(y-1,x-1, parolaCostruita, indiceParola + 1, posizioniTrovate);
             }
 
             //Lettera superiore destra
-            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x + 1, y - 1).ToString()) && x < 4 && y > 0 && this.Board[x + 1, y - 1] == carattereDaCercare)
+            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (y - 1).ToString()+ (x + 1).ToString()) && x < 4 && y > 0 && this.Board[y - 1,x+1] == carattereDaCercare)
             {   
-                posizioniTrovate[indiceParola] = (x + 1, y - 1).ToString();
+                posizioniTrovate[indiceParola] = (y - 1).ToString() + (x + 1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
-                return cercaAdiacenti(x+1, y - 1, parolaCostruita, indiceParola + 1, posizioniTrovate);
+                return cercaAdiacenti(y - 1, x+1, parolaCostruita, indiceParola + 1, posizioniTrovate);
             }
 
             //Lettera superiore centrale
-            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x, y - 1).ToString()) && y > 0 && this.Board[x, y - 1] == carattereDaCercare)
+            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (y - 1).ToString()+ x.ToString()) && y > 0 && this.Board[y - 1, x] == carattereDaCercare)
             {
-                posizioniTrovate[indiceParola] = (x, y - 1).ToString();
+                posizioniTrovate[indiceParola] = (y - 1).ToString() + x.ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
-                return cercaAdiacenti(x, y - 1, parolaCostruita, indiceParola + 1, posizioniTrovate);
+                return cercaAdiacenti(y-1, x, parolaCostruita, indiceParola + 1, posizioniTrovate);
             }
 
             //Lettera inferiore centrale
-            if(!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x, y + 1).ToString()) && y <4 && this.Board[x,y+1]== carattereDaCercare)
+            if(!isCarattereGiàPresente(posizioniTrovate, indiceParola, (y + 1).ToString()+ x.ToString()) && y <4 && this.Board[y+1, x]== carattereDaCercare)
             {
-                posizioniTrovate[indiceParola] = (x, y + 1).ToString();
+                posizioniTrovate[indiceParola] = (y + 1).ToString() + x.ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
-                return cercaAdiacenti(x, y + 1, parolaCostruita, indiceParola + 1, posizioniTrovate);
+                return cercaAdiacenti(y + 1, x, parolaCostruita, indiceParola + 1, posizioniTrovate);
             }
 
             //Lettera inferiore sinistra
-            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x-1, y + 1).ToString()) && x >0 && y < 4 && this.Board[x-1, y + 1] == carattereDaCercare)
+            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (y + 1).ToString()+ (x - 1).ToString()) && x >0 && y < 4 && this.Board[y + 1, x-1] == carattereDaCercare)
             {   
-                posizioniTrovate[indiceParola] = (x - 1, y + 1).ToString();
+                posizioniTrovate[indiceParola] = (y + 1).ToString() + (x - 1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
-                return cercaAdiacenti(x-1, y + 1, parolaCostruita, indiceParola + 1, posizioniTrovate);
+                return cercaAdiacenti(y+1, x- 1, parolaCostruita, indiceParola + 1, posizioniTrovate);
             }
 
             //Lettera inferiore destra
-            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x+1, y + 1).ToString()) && x < 4 && y < 4 && this.Board[x + 1, y + 1] == carattereDaCercare)
+            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (y + 1).ToString()+ (x + 1).ToString()) && x < 4 && y < 4 && this.Board[y + 1,x+1] == carattereDaCercare)
             {
-                posizioniTrovate[indiceParola] = (x + 1, y + 1).ToString();
+                posizioniTrovate[indiceParola] = (y + 1).ToString() + (x + 1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
-                return cercaAdiacenti(x + 1, y + 1, parolaCostruita, indiceParola + 1, posizioniTrovate);
+                return cercaAdiacenti(y + 1, x + 1, parolaCostruita, indiceParola + 1, posizioniTrovate);
             }
+            paroleTrovate.Clear();
             return false;
         }
 
         public void setParolaTrovata(String parolaTrovata)
         {
             this.parolaTrovata = parolaTrovata;
+        }
+
+        public  void setBoard(char[,] x)
+        {
+            Board = x;
         }
 
         public char[,] getBoard()

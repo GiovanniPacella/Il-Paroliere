@@ -15,6 +15,7 @@ namespace Il_Paroliere.Model
         private char [] lettere = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
         private char[,] Board = new char[nRigheColonne,nRigheColonne];
         private String parolaTrovata;
+        private string[] paroleTrovate;
 
         public MainModel() { }
 
@@ -68,7 +69,7 @@ namespace Il_Paroliere.Model
 
         public bool isCorretta(String x)
         {
-            if (isPrimoCaratterePresente(x[0]))
+            if (isPrimoCaratterePresente(x[0]) && !isParolaGiàTrovata(x))
             {
                 return true;
             }
@@ -92,11 +93,23 @@ namespace Il_Paroliere.Model
             return false;
         }
 
-        public bool isGiàPresente(string[]posizioni, int j, string posizioneDaVerificare)
+        public bool isCarattereGiàPresente(string[]posizioni, int j, string posizioneDaVerificare)
         {
             for(int i = 0; i <j; i++)
             {
                 if (posizioni[i] == posizioneDaVerificare)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool isParolaGiàTrovata(string x)
+        {
+            for(int i = 0; i < paroleTrovate.Length; i++)
+            {
+                if (paroleTrovate[i] == x)
                 {
                     return true;
                 }
@@ -115,7 +128,7 @@ namespace Il_Paroliere.Model
             char carattereDaCercare = parolaTrovata[indiceParola];
 
             //Lettera destra centrale
-            if (!isGiàPresente(posizioniTrovate, indiceParola, (x+1,y).ToString()) && x<4 && this.Board[x+1, y] == carattereDaCercare)
+            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x+1,y).ToString()) && x<4 && this.Board[x+1, y] == carattereDaCercare)
             {
                 posizioniTrovate[indiceParola] = (x + 1, y).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
@@ -123,7 +136,7 @@ namespace Il_Paroliere.Model
             }
 
             //Lettera sinistra centrale
-            if(!isGiàPresente(posizioniTrovate, indiceParola, (x - 1, y).ToString()) && x >0 && this.Board[x-1, y] == carattereDaCercare)
+            if(!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x - 1, y).ToString()) && x >0 && this.Board[x-1, y] == carattereDaCercare)
             {
                 posizioniTrovate[indiceParola] = (x - 1, y).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
@@ -131,7 +144,7 @@ namespace Il_Paroliere.Model
             }
 
             //Lettera superiore sinistra
-            if(!isGiàPresente(posizioniTrovate, indiceParola, (x - 1, y-1).ToString()) && x >0 && y>0 && this.Board[x-1, y-1] == carattereDaCercare)
+            if(!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x - 1, y-1).ToString()) && x >0 && y>0 && this.Board[x-1, y-1] == carattereDaCercare)
             {
                 posizioniTrovate[indiceParola] = (x - 1, y-1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
@@ -139,7 +152,7 @@ namespace Il_Paroliere.Model
             }
 
             //Lettera superiore destra
-            if (!isGiàPresente(posizioniTrovate, indiceParola, (x + 1, y - 1).ToString()) && x < 4 && y > 0 && this.Board[x + 1, y - 1] == carattereDaCercare)
+            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x + 1, y - 1).ToString()) && x < 4 && y > 0 && this.Board[x + 1, y - 1] == carattereDaCercare)
             {   
                 posizioniTrovate[indiceParola] = (x + 1, y - 1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
@@ -147,7 +160,7 @@ namespace Il_Paroliere.Model
             }
 
             //Lettera superiore centrale
-            if (!isGiàPresente(posizioniTrovate, indiceParola, (x, y - 1).ToString()) && y > 0 && this.Board[x, y - 1] == carattereDaCercare)
+            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x, y - 1).ToString()) && y > 0 && this.Board[x, y - 1] == carattereDaCercare)
             {
                 posizioniTrovate[indiceParola] = (x, y - 1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
@@ -155,7 +168,7 @@ namespace Il_Paroliere.Model
             }
 
             //Lettera inferiore centrale
-            if(!isGiàPresente(posizioniTrovate, indiceParola, (x, y + 1).ToString()) && y <4 && this.Board[x,y+1]== carattereDaCercare)
+            if(!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x, y + 1).ToString()) && y <4 && this.Board[x,y+1]== carattereDaCercare)
             {
                 posizioniTrovate[indiceParola] = (x, y + 1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
@@ -163,7 +176,7 @@ namespace Il_Paroliere.Model
             }
 
             //Lettera inferiore sinistra
-            if (!isGiàPresente(posizioniTrovate, indiceParola, (x-1, y + 1).ToString()) && x >0 && y < 4 && this.Board[x-1, y + 1] == carattereDaCercare)
+            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x-1, y + 1).ToString()) && x >0 && y < 4 && this.Board[x-1, y + 1] == carattereDaCercare)
             {   
                 posizioniTrovate[indiceParola] = (x - 1, y + 1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);
@@ -171,7 +184,7 @@ namespace Il_Paroliere.Model
             }
 
             //Lettera inferiore destra
-            if (!isGiàPresente(posizioniTrovate, indiceParola, (x+1, y + 1).ToString()) && x < 4 && y < 4 && this.Board[x + 1, y + 1] == carattereDaCercare)
+            if (!isCarattereGiàPresente(posizioniTrovate, indiceParola, (x+1, y + 1).ToString()) && x < 4 && y < 4 && this.Board[x + 1, y + 1] == carattereDaCercare)
             {
                 posizioniTrovate[indiceParola] = (x + 1, y + 1).ToString();
                 parolaCostruita += Char.ToString(carattereDaCercare);

@@ -50,6 +50,8 @@ namespace Il_Paroliere.View
         public Gioco(object v, object sender, EventArgs eventArgs, EventArgs e)
         {
         }
+
+      
     }
 
 

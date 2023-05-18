@@ -11,7 +11,7 @@ namespace Il_Paroliere
         {
             InitializeComponent();
             SoundPlayer sound = new SoundPlayer(Properties.Resources.title);
-            sound.Play();
+            sound.PlayLooping();
 
         }
 

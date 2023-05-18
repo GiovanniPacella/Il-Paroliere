@@ -54,15 +54,18 @@ namespace Il_Paroliere.View
         private void button26_Click(object sender, EventArgs e)
         {
             string parolaInserita = Ricerca.Text;
-            bool isParolaCorretta = Model.isCorretta(parolaInserita);
-            if (isParolaCorretta)
+            if (parolaInserita != "")
             {
-                Ricerca.Clear();
-                Trovate.Items.Add(parolaInserita);
-            }
-            else
-            {
-                MessageBox.Show("Parola non trovata!", "Errore", MessageBoxButtons.OK);
+                bool isParolaCorretta = Model.isCorretta(parolaInserita);
+                if (isParolaCorretta)
+                {
+                    Ricerca.Clear();
+                    Trovate.Items.Add(parolaInserita);
+                }
+                else
+                {
+                    MessageBox.Show("Parola non trovata!", "Errore", MessageBoxButtons.OK);
+                }
             }
         }
 

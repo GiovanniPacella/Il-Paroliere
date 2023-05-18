@@ -113,10 +113,16 @@ namespace Il_Paroliere.Model
             for(int k = 0; k < posizioniIniziali.Count; k++)
             {
                 string[] posizioniTrovate = new string[25];
-                int i = int.Parse(posizioniIniziali[k].Substring(0,1));
+                //Versione 1
+                //int i = int.Parse(posizioniIniziali[k].Substring(0,1));
+                //int j = int.Parse(posizioniIniziali[k].Substring(1, 1));
+                //posizioniTrovate[0] = (i.ToString() + j.ToString());
+                //ritornoFunzioniRicerca[k] = cercaAdiacenti(i, j, Char.ToString(x), 1, posizioniTrovate);
+                //Versione 2
+                int i = int.Parse(posizioniIniziali[k].Substring(0, 1));
                 int j = int.Parse(posizioniIniziali[k].Substring(1, 1));
-                posizioniTrovate[0] = (i.ToString() + j.ToString());
-                ritornoFunzioniRicerca[k] = cercaAdiacenti(i, j, Char.ToString(x), 1, posizioniTrovate);
+                ritornoFunzioniRicerca[k] = cercaAdiacentiV2(i, j, "", 0, posizioniTrovate);
+
             }
             if (controllaRicerca())
             {
@@ -227,10 +233,10 @@ namespace Il_Paroliere.Model
         }
 
 
-        /*
-          public bool cercaAdiacentiV2(int y, int x, String parolaCostruita, int indiceParola, string[] posizioniTrovate){
-            if(Board[y, x]!=null){
-                if(Board[x, y]==parolaTrovata[indiceParola] && !isCarattereGiàPresente(posizioniTrovate, indiceParola, y.ToString()+x.ToString()) ){
+        
+        public bool cercaAdiacentiV2(int y, int x, String parolaCostruita, int indiceParola, string[] posizioniTrovate){
+            if(x>-1 && y>-1 && x<5 && y<5){
+                if(Board[y, x]==parolaTrovata[indiceParola] && !isCarattereGiàPresente(posizioniTrovate, indiceParola, y.ToString()+x.ToString()) ){
                     posizioniTrovate[indiceParola] = y.ToString() + x.ToString();
                     parolaCostruita += Char.ToString(parolaTrovata[indiceParola]);
                     if(parolaCostruita==parolaTrovata){
@@ -242,9 +248,9 @@ namespace Il_Paroliere.Model
                     cercaAdiacentiV2(y+1, x-1, parolaCostruita, indiceParola+1, posizioniTrovate) || cercaAdiacentiV2(y+1, x+1, parolaCostruita, indiceParola+1, posizioniTrovate); 
                 }
             }
-            
-          }
-         */
+            return false;        
+        }
+         
 
         public void setParolaTrovata(String parolaTrovata)
         {

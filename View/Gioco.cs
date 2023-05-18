@@ -56,7 +56,7 @@ namespace Il_Paroliere.View
             string parolaInserita = Ricerca.Text;
             if (parolaInserita != "")
             {
-                bool isParolaCorretta = Model.isCorretta(parolaInserita);
+                bool isParolaCorretta = Model.isParolaTrovata(parolaInserita);
                 if (isParolaCorretta)
                 {
                     Ricerca.Clear();

@@ -226,6 +226,26 @@ namespace Il_Paroliere.Model
             return false;
         }
 
+
+        /*
+          public bool cercaAdiacentiV2(int y, int x, String parolaCostruita, int indiceParola, string[] posizioniTrovate){
+            if(Board[y, x]!=null){
+                if(Board[x, y]==parolaTrovata[indiceParola] && !isCarattereGiàPresente(posizioniTrovate, indiceParola, y.ToString()+x.ToString()) ){
+                    posizioniTrovate[indiceParola] = y.ToString() + x.ToString();
+                    parolaCostruita += Char.ToString(parolaTrovata[indiceParola]);
+                    if(parolaCostruita==parolaTrovata){
+                        return true;
+                    }
+                    return cercaAdiacentiV2(y+1, x, parolaCostruita, indiceParola+1, posizioniTrovate) || cercaAdiacentiV2(y-1, x, parolaCostruita, indiceParola+1, posizioniTrovate) || 
+                    cercaAdiacentiV2(y-1, x-1, parolaCostruita, indiceParola+1, posizioniTrovate) || cercaAdiacentiV2(y-1, x+1, parolaCostruita, indiceParola+1, posizioniTrovate) || 
+                    cercaAdiacentiV2(y, x+1, parolaCostruita, indiceParola+1, posizioniTrovate) || cercaAdiacentiV2(y, x-1, parolaCostruita, indiceParola+1, posizioniTrovate) || 
+                    cercaAdiacentiV2(y+1, x-1, parolaCostruita, indiceParola+1, posizioniTrovate) || cercaAdiacentiV2(y+1, x+1, parolaCostruita, indiceParola+1, posizioniTrovate); 
+                }
+            }
+            
+          }
+         */
+
         public void setParolaTrovata(String parolaTrovata)
         {
             this.parolaTrovata = parolaTrovata;

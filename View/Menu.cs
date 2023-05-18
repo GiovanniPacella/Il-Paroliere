@@ -12,7 +12,6 @@ namespace Il_Paroliere
             InitializeComponent();
             SoundPlayer sound = new SoundPlayer(Properties.Resources.title);
             sound.Play();
-
         }
 
         private void Menu_Load(object sender, EventArgs e)

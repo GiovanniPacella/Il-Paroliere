@@ -53,8 +53,8 @@ namespace Il_Paroliere.View
 
         private void button26_Click(object sender, EventArgs e)
         {
-            string parolaInserita = Ricerca.Text;
-            bool isParolaCorretta = Model.isCorretta(parolaInserita);
+            string parolaInserita = Ricerca.Text.ToUpper();
+            bool isParolaCorretta = Model.isParolaTrovata(parolaInserita);
             if (isParolaCorretta)
             {
                 Ricerca.Clear();

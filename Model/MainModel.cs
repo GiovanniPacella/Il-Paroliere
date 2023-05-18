@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Media;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,7 +60,7 @@ namespace Il_Paroliere.Model
         {
             Connection con = new Connection();
             con.connOpen();
-            string query = "SELECT * FROM parole WHERE parola='" + x + "' ;";
+            string query = "SELECT * FROM paroledizionariogpo WHERE Parole='" + x + "' ;";
             if (con.queryGenerica(query))
             {
                 return true;
@@ -239,5 +240,6 @@ namespace Il_Paroliere.Model
         {
             return this.Board;
         }
+
     }
 }

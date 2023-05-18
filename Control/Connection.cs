@@ -60,7 +60,15 @@ namespace Il_Paroliere.Control
             try 
             {
                 MySqlCommand cmd = new MySqlCommand(query, connMaster);
-                return true;
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             catch (Exception ex)
             {

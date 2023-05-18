@@ -17,6 +17,8 @@ namespace Il_Paroliere.Model
         private char[,] Board = new char[nRigheColonne,nRigheColonne];
         private String parolaTrovata;
         List<string> paroleTrovate = new List<string>();
+        List<string> posizioniIniziali = new List<string>();
+        private bool[] ritornoFunzioniRicerca;
 
         public MainModel() {
             creaBoard();
@@ -60,7 +62,6 @@ namespace Il_Paroliere.Model
             string query = "SELECT * FROM parole WHERE parola='" + x + "' ;";
             if (con.queryGenerica(query))
             {
-                this.parolaTrovata = x.ToUpper();
                 return true;
             }
             else
@@ -72,7 +73,7 @@ namespace Il_Paroliere.Model
 
         public bool isCorretta(String x)
         {
-            this.parolaTrovata = x;
+            this.parolaTrovata = x.ToUpper();
             if (isPrimoCaratterePresente(x[0]) && !isParolaGiàTrovata(x))
             {
                 return true;
@@ -83,6 +84,18 @@ namespace Il_Paroliere.Model
             }
         }
 
+        public bool controllaRicerca()
+        {
+            for(int i =0;i<ritornoFunzioniRicerca.Length;i++)
+            {
+                if (ritornoFunzioniRicerca[i])
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public bool isPrimoCaratterePresente(char x)
         {
             for (int i = 0; i < nRigheColonne; i++)
@@ -91,11 +104,21 @@ namespace Il_Paroliere.Model
                 {
                     if (this.Board[i, j] == x)
                     {
-                        string[] posizioniTrovate = new string[25];
-                        posizioniTrovate[0]=(i.ToString()+j.ToString());
-                        return cercaAdiacenti(i, j, Char.ToString(x), 1, posizioniTrovate);
+                        posizioniIniziali.Add(i.ToString() + j.ToString());
                     }
                 }
+            }
+            for(int k = 0; k < posizioniIniziali.Count; k++)
+            {
+                string[] posizioniTrovate = new string[25];
+                int i = int.Parse(posizioniIniziali[k].Substring(0,1));
+                int j = int.Parse(posizioniIniziali[k].Substring(1, 2));
+                posizioniTrovate[0] = (i.ToString() + j.ToString());
+                ritornoFunzioniRicerca[k] = cercaAdiacenti(i, j, Char.ToString(x), 1, posizioniTrovate);
+            }
+            if (controllaRicerca())
+            {
+                return true;
             }
             return false;
         }
@@ -118,10 +141,10 @@ namespace Il_Paroliere.Model
             {
                 if (paroleTrovate[i] == x)
                 {
-                    return true;
+                    return false;
                 }
             }
-            return false;
+            return true;
         }
 
 

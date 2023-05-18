@@ -19,43 +19,21 @@ namespace Il_Paroliere
         {
         }
 
-        private void bottoneGioca_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(() => {
-                Connection con = new Connection();
-
-                if (con.connOpen())
-                {
-                    this.Hide();
-                    var gioco = new Gioco();
-                    gioco.Closed += (s, args) => this.Close();
-                    gioco.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Connessione al database non disponibile!", "Errore connessione", MessageBoxButtons.OK);
-                }
-            });
-            thread.Start();
-        }
 
         private void bottoneClassifica_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() => {
-                Connection con = new Connection();
-                if (con.connOpen())
-                { 
-                    this.Hide();
-                    var classifica = new Classifica();
-                    classifica.Closed += (s, args) => this.Close();
-                    classifica.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Connessione al database non disponibile!", "Errore connessione", MessageBoxButtons.OK);
-                }
-            });
-            thread.Start();
+            Connection con = new Connection();
+            if (con.connOpen())
+            {
+                this.Hide();
+                var classifica = new Classifica();
+                classifica.Closed += (s, args) => this.Close();
+                classifica.Show();
+            }
+            else
+            {
+                MessageBox.Show("Connessione al database non disponibile!", "Errore connessione", MessageBoxButtons.OK);
+            }
         }
 
         private void bottoneUscita_Click(object sender, EventArgs e)
@@ -63,6 +41,22 @@ namespace Il_Paroliere
             if (MessageBox.Show("Sei sicuro di voler uscire?", "Uscita", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 Application.Exit();
+            }
+        }
+
+        private void bottoneGioca_Click(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            if (con.connOpen())
+            {
+                this.Hide();
+                var dati = new Dati();
+                dati.Closed += (s, args) => this.Close();
+                dati.Show();
+            }
+            else
+            {
+                MessageBox.Show("Connessione al database non disponibile!", "Errore connessione", MessageBoxButtons.OK);
             }
         }
     }

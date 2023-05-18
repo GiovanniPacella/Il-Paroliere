@@ -24,19 +24,23 @@ namespace Il_Paroliere.View
             MySqlDataReader reader = con.querySelect(query);
             while (reader.Read())
             {
-                Console.WriteLine("Nome giocatore: "+reader["nomeGiocatore"]);
-                Console.WriteLine("Punteggio: "+reader["punteggio"]);
-                Console.WriteLine("Parole trovate: "+reader["paroleTrovate"]);
+                Console.WriteLine("Nome giocatore: " + reader["nomeGiocatore"]);
+                Console.WriteLine("Punteggio: " + reader["punteggio"]);
+                Console.WriteLine("Parole trovate: " + reader["paroleTrovate"]);
+
+                label10.Text = reader["nomeGiocatore"] + " - Punti: " + reader["punteggio"]+" - Parole: "+ reader["paroleTrovate"];
 
             }
             con.connClose();
-            
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var menu = new Menu();
+            menu.Closed += (s, args) => this.Close();
+            menu.Show();
         }
-
     }
 }

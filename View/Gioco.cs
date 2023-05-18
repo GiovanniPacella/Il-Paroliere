@@ -13,6 +13,7 @@ namespace Il_Paroliere.View
 {
     public partial class Gioco : Form
     {
+        int val = 60;
         public Gioco()
         {
             InitializeComponent();
@@ -44,11 +45,35 @@ namespace Il_Paroliere.View
             button23.Text = Char.ToString(board[4, 2]);
             button24.Text = Char.ToString(board[4, 3]);
             button25.Text = Char.ToString(board[4, 4]);
-
+            timer1.Start();
         }
 
         public Gioco(object v, object sender, EventArgs eventArgs, EventArgs e)
         {
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            MainModel Model = new MainModel();
+            Model.getBoard();
+            string parolaInserita = Ricerca.Text;
+            bool isParolaCorretta = Model.isCorretta(parolaInserita);
+            if (isParolaCorretta)
+            {
+                Ricerca.Clear();
+                Trovate.Items.Add(parolaInserita);
+            }
+            else
+            {
+                MessageBox.Show("Parola non trovata!", "Errore", MessageBoxButtons.OK);
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int tempo = val--;
+            Timer.Text = "00:" + tempo.ToString();
+            //Precario
         }
 
       

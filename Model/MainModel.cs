@@ -18,7 +18,7 @@ namespace Il_Paroliere.Model
         private String parolaTrovata;
         List<string> paroleTrovate = new List<string>();
         List<string> posizioniIniziali = new List<string>();
-        private bool[] ritornoFunzioniRicerca;
+        private bool[] ritornoFunzioniRicerca = new bool[100];
 
         public MainModel() {
             creaBoard();
@@ -76,6 +76,7 @@ namespace Il_Paroliere.Model
             this.parolaTrovata = x.ToUpper();
             if (isPrimoCaratterePresente(x[0]) && !isParolaGiàTrovata(x))
             {
+                paroleTrovate.Add(parolaTrovata);
                 return true;
             }
             else
@@ -112,7 +113,7 @@ namespace Il_Paroliere.Model
             {
                 string[] posizioniTrovate = new string[25];
                 int i = int.Parse(posizioniIniziali[k].Substring(0,1));
-                int j = int.Parse(posizioniIniziali[k].Substring(1, 2));
+                int j = int.Parse(posizioniIniziali[k].Substring(1, 1));
                 posizioniTrovate[0] = (i.ToString() + j.ToString());
                 ritornoFunzioniRicerca[k] = cercaAdiacenti(i, j, Char.ToString(x), 1, posizioniTrovate);
             }
@@ -141,10 +142,10 @@ namespace Il_Paroliere.Model
             {
                 if (paroleTrovate[i] == x)
                 {
-                    return false;
+                    return true;
                 }
             }
-            return true;
+            return false;
         }
 
 
@@ -153,7 +154,6 @@ namespace Il_Paroliere.Model
         {
             if (parolaTrovata == parolaCostruita)
             {
-                paroleTrovate.Add(parolaTrovata);
                 return true;
             }
             char carattereDaCercare = parolaTrovata[indiceParola];

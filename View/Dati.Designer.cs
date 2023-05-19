@@ -34,7 +34,7 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.Nome = new System.Windows.Forms.TextBox();
+            this.Nickname = new System.Windows.Forms.TextBox();
             this.Bottonecontinua = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -116,15 +116,15 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Nickname";
             // 
-            // Nome
+            // Nickname
             // 
-            this.Nome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.Nome.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Nome.Location = new System.Drawing.Point(867, 627);
-            this.Nome.Margin = new System.Windows.Forms.Padding(6);
-            this.Nome.Name = "Nome";
-            this.Nome.Size = new System.Drawing.Size(569, 54);
-            this.Nome.TabIndex = 6;
+            this.Nickname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.Nickname.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Nickname.Location = new System.Drawing.Point(867, 627);
+            this.Nickname.Margin = new System.Windows.Forms.Padding(6);
+            this.Nickname.Name = "Nickname";
+            this.Nickname.Size = new System.Drawing.Size(569, 54);
+            this.Nickname.TabIndex = 6;
             // 
             // Bottonecontinua
             // 
@@ -147,7 +147,7 @@
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(1558, 1090);
             this.Controls.Add(this.Bottonecontinua);
-            this.Controls.Add(this.Nome);
+            this.Controls.Add(this.Nickname);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
@@ -173,7 +173,7 @@
         private RadioButton radioButton2;
         private RadioButton radioButton3;
         private Label label3;
-        private TextBox Nome;
+        private TextBox Nickname;
         private Button Bottonecontinua;
     }
 }

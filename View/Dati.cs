@@ -19,10 +19,16 @@ namespace Il_Paroliere.View
 
         private void Bottonecontinua_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var gioca = new Gioco();
-            gioca.Closed += (s, args) => this.Close();
-            gioca.Show();
+            string nickname= Nickname.Text;
+            if(nickname != "")
+            {
+                MainController controller = new MainController();
+                controller.setNicknameGiocatore(nickname);
+                this.Hide();
+                var gioca = new Gioco();
+                gioca.Closed += (s, args) => this.Close();
+                gioca.Show();
+            }
         }
     }
 }

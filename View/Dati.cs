@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -40,6 +41,8 @@ namespace Il_Paroliere.View
 
                 controller.setDifficolta(difficolta);
 
+                SoundPlayer sound = new SoundPlayer(Properties.Resources.title);
+                sound.Stop();
                 this.Hide();
                 var gioca = new Gioco();
                 gioca.Closed += (s, args) => this.Close();

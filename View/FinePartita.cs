@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,7 +16,9 @@ namespace Il_Paroliere.View
         public FinePartita()
         {
             InitializeComponent();
-            MainController controller= new MainController();
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.gioco);
+            sound.Stop();
+            MainController controller = new MainController();
             int punteggio = controller.getPunteggio();
             Punti.Text = punteggio.ToString();
 
@@ -23,6 +26,8 @@ namespace Il_Paroliere.View
 
         private void bottoneMenu_Click(object sender, EventArgs e)
         {
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.gioco);
+            sound.Stop();
             this.Hide();
             var menu = new Menu();
             menu.Closed += (s, args) => this.Close();

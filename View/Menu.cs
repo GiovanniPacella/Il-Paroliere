@@ -7,10 +7,11 @@ namespace Il_Paroliere
 {
     public partial class Menu : Form
     {
+        SoundPlayer sound = new SoundPlayer(Properties.Resources.title);
         public Menu()
         {
             InitializeComponent();
-            SoundPlayer sound = new SoundPlayer(Properties.Resources.title);
+            
             sound.PlayLooping();
 
         }

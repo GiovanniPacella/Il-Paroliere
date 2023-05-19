@@ -6,6 +6,7 @@ namespace Il_Paroliere
     internal class MainController
     {
         private static string nicknameGiocatore;
+        private static int numParole; 
         private static int difficolta;
         private static int punteggio;   
 
@@ -32,6 +33,14 @@ namespace Il_Paroliere
         public int getPunteggio()
         {
             return punteggio;
+        }
+        public void setNumParole(int numPar)
+        {
+            numParole = numPar;
+        }
+        public int getNumParole()
+        {
+            return numParole;
         }
 
         /// <summary>

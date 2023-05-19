@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,6 +20,8 @@ namespace Il_Paroliere.View
         public Gioco()
         {
             InitializeComponent();
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.gioco);
+            sound.PlayLooping();
 
             switch (Controller.getDifficolta())
             {
@@ -101,6 +104,7 @@ namespace Il_Paroliere.View
                     else
                     {
                         fineTimer = true;
+                        Controller.setPunteggio(int.Parse(Punti.Text));
                         this.Hide();
                         var finePartita = new FinePartita();
                         finePartita.Closed += (s, args) => this.Close();

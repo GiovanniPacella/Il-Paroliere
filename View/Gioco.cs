@@ -275,6 +275,11 @@ namespace Il_Paroliere.View
                 }
             }
         }
+
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            Ricerca.Clear();
+        }
     }
 
 

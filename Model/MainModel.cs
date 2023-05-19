@@ -20,6 +20,7 @@ namespace Il_Paroliere.Model
         List<string> paroleTrovate = new List<string>();
         List<string> posizioniIniziali = new List<string>();
         private bool[] ritornoFunzioniRicerca = new bool[100];
+        private int punteggioSingoloCarattere = 100;
 
         public MainModel() {
             creaBoard();
@@ -113,12 +114,6 @@ namespace Il_Paroliere.Model
             for(int k = 0; k < posizioniIniziali.Count; k++)
             {
                 string[] posizioniTrovate = new string[25];
-                //Versione 1
-                //int i = int.Parse(posizioniIniziali[k].Substring(0,1));
-                //int j = int.Parse(posizioniIniziali[k].Substring(1, 1));
-                //posizioniTrovate[0] = (i.ToString() + j.ToString());
-                //ritornoFunzioniRicerca[k] = cercaAdiacenti(i, j, Char.ToString(x), 1, posizioniTrovate);
-                //Versione 2
                 int i = int.Parse(posizioniIniziali[k].Substring(0, 1));
                 int j = int.Parse(posizioniIniziali[k].Substring(1, 1));
                 ritornoFunzioniRicerca[k] = cercaAdiacentiV2(i, j, "", 0, posizioniTrovate);
@@ -187,6 +182,23 @@ namespace Il_Paroliere.Model
         public char[,] getBoard()
         {
             return this.Board;
+        }
+
+        public int getPunteggio(String x, int controller)
+        {
+            switch (controller)
+            {
+                case 1:
+                    return Convert.ToInt32(punteggioSingoloCarattere * x.Length * 0.75);
+                    break;
+                case 2:
+                    return punteggioSingoloCarattere * x.Length;
+                    break;
+                case 3:
+                    return Convert.ToInt32(punteggioSingoloCarattere * x.Length * 1.25);
+                    break;
+            }
+            return -1;
         }
 
     }

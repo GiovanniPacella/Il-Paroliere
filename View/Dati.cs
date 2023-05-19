@@ -48,6 +48,10 @@ namespace Il_Paroliere.View
                 gioca.Closed += (s, args) => this.Close();
                 gioca.Show();
             }
+            else
+            {
+                MessageBox.Show("Inserisci un nickname!", "Errore", MessageBoxButtons.OK);
+            }
         }
     }
 }

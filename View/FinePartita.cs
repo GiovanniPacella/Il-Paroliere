@@ -21,6 +21,7 @@ namespace Il_Paroliere.View
             MainController controller = new MainController();
             int punteggio = controller.getPunteggio();
             Punti.Text = punteggio.ToString();
+            
 
         }
 

@@ -20,7 +20,6 @@ namespace Il_Paroliere
         {
         }
 
-
         private void bottoneClassifica_Click(object sender, EventArgs e)
         {
             Connection con = new Connection();

@@ -69,6 +69,159 @@ namespace Il_Paroliere.View
         {
         }
 
+
+
+        //Click al singolo bottone
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string carattere = button1.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string carattere = button2.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string carattere = button3.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string carattere = button4.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string carattere = button5.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string carattere = button6.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string carattere = button7.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            string carattere = button8.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            string carattere = button9.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            string carattere = button10.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            string carattere = button11.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            string carattere = button12.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            string carattere = button13.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            string carattere = button14.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            string carattere = button15.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            string carattere = button16.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            string carattere = button17.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            string carattere = button18.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            string carattere = button19.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            string carattere = button20.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            string carattere = button21.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            string carattere = button22.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            string carattere = button23.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            string carattere = button24.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            string carattere = button25.Text;
+            Ricerca.Text = Ricerca.Text + carattere;
+        }
+
         private void button26_Click(object sender, EventArgs e)
         {
             string parolaInserita = Ricerca.Text;
@@ -121,10 +274,7 @@ namespace Il_Paroliere.View
                     Timer.Text = minuti.ToString() + ":" + secondi.ToString();
                 }
             }
-            //Precario
         }
-
-
     }
 
 

@@ -231,7 +231,7 @@ namespace Il_Paroliere.View
                 if (isParolaCorretta)
                 {
                     Ricerca.Clear();
-                    Trovate.Items.Add(parolaInserita);
+                    Trovate.Items.Add(parolaInserita.ToUpper());
                     Punti.Text = (int.Parse(Punti.Text) + Model.getPunteggio(parolaInserita, Controller.getDifficolta())).ToString();
                 }
                 else

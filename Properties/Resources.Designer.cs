@@ -112,6 +112,15 @@ namespace Il_Paroliere.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.IO.UnmanagedMemoryStream simile a System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream finePartita {
+            get {
+                return ResourceManager.GetStream("finePartita", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.IO.UnmanagedMemoryStream simile a System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream gioco {
             get {
                 return ResourceManager.GetStream("gioco", resourceCulture);

@@ -18,7 +18,8 @@ namespace Il_Paroliere.View
         public FinePartita()
         {
             InitializeComponent();
-            
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.finePartita);
+            sound.Play();
             MainController controller = new MainController();
             MainModel model = new MainModel(); 
             Connection con = new Connection();

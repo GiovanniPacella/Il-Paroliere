@@ -3,8 +3,19 @@ using System.Reflection;
 
 namespace Il_Paroliere
 {
-    internal static class MainController
+    internal class MainController
     {
+        private static string nicknameGiocatore;
+
+        public void setNicknameGiocatore(string nickname)
+        {
+            nicknameGiocatore = nickname;
+        }
+        public string getNicknameGiocatore()
+        {
+            return nicknameGiocatore;
+        }
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

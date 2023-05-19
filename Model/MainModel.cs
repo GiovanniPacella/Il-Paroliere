@@ -121,6 +121,7 @@ namespace Il_Paroliere.Model
             }
             if (controllaRicerca())
             {
+                paroleTrovate.Clear();
                 return true;
             }
             return false;

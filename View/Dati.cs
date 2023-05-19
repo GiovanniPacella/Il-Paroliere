@@ -38,6 +38,8 @@ namespace Il_Paroliere.View
                 if (isChecked)
                     difficolta = 3;
 
+                controller.setDifficolta(difficolta);
+
                 this.Hide();
                 var gioca = new Gioco();
                 gioca.Closed += (s, args) => this.Close();

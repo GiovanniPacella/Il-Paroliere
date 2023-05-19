@@ -16,13 +16,13 @@ namespace Il_Paroliere
         {
             return nicknameGiocatore;
         }
-        public void setDifficolta(string nickname)
+        public void setDifficolta(int dif)
         {
-            nicknameGiocatore = nickname;
+            difficolta = dif;
         }
-        public string getDifficolta()
+        public int getDifficolta()
         {
-            return nicknameGiocatore;
+            return difficolta;
         }
 
         /// <summary>

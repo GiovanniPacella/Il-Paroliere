@@ -24,6 +24,20 @@ namespace Il_Paroliere.View
             {
                 MainController controller = new MainController();
                 controller.setNicknameGiocatore(nickname);
+                int difficolta=0;
+
+                bool isChecked = radioButton1.Checked;
+                if (isChecked)
+                    difficolta = 1;
+
+                isChecked = radioButton2.Checked;
+                if (isChecked)
+                    difficolta = 2;
+
+                isChecked = radioButton3.Checked;
+                if (isChecked)
+                    difficolta = 3;
+
                 this.Hide();
                 var gioca = new Gioco();
                 gioca.Closed += (s, args) => this.Close();

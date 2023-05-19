@@ -6,12 +6,21 @@ namespace Il_Paroliere
     internal class MainController
     {
         private static string nicknameGiocatore;
+        private static int difficolta;
 
         public void setNicknameGiocatore(string nickname)
         {
             nicknameGiocatore = nickname;
         }
         public string getNicknameGiocatore()
+        {
+            return nicknameGiocatore;
+        }
+        public void setDifficolta(string nickname)
+        {
+            nicknameGiocatore = nickname;
+        }
+        public string getDifficolta()
         {
             return nicknameGiocatore;
         }

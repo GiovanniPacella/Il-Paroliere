@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gioco));
             Titolo = new Label();
             button1 = new Button();
             button2 = new Button();
@@ -69,13 +70,13 @@
             // 
             Titolo.Font = new Font("Bauhaus 93", 72F, FontStyle.Bold, GraphicsUnit.Point);
             Titolo.ForeColor = Color.FromArgb(235, 94, 40);
-            Titolo.Location = new Point(1, 0);
+            Titolo.Location = new Point(38, 0);
             Titolo.Margin = new Padding(2, 0, 2, 0);
             Titolo.Name = "Titolo";
             Titolo.RightToLeft = RightToLeft.No;
             Titolo.Size = new Size(983, 112);
             Titolo.TabIndex = 2;
-            Titolo.Text = "IL PAROLIERE";
+            Titolo.Text = "JUICE WORD";
             Titolo.TextAlign = ContentAlignment.MiddleCenter;
             Titolo.UseMnemonic = false;
             // 
@@ -521,6 +522,7 @@
             Controls.Add(Titolo);
             ForeColor = Color.WhiteSmoke;
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Gioco";

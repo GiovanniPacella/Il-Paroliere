@@ -28,7 +28,7 @@ namespace Il_Paroliere.View
                 Console.WriteLine("Nome giocatore: " + reader["nomeGiocatore"]);
                 Console.WriteLine("Punteggio: " + reader["punteggio"]);
                 Console.WriteLine("Parole trovate: " + reader["paroleTrovate"]);
-                switch(i)
+                switch (i)
                 {
                     case 0:
                         label10.Text = reader["nomeGiocatore"] + " - Punti: " + reader["punteggio"] + " - Parole: " + reader["paroleTrovate"];

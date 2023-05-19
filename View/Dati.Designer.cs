@@ -28,141 +28,134 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Nickname = new System.Windows.Forms.TextBox();
-            this.Bottonecontinua = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dati));
+            label1 = new Label();
+            label2 = new Label();
+            radioButton1 = new RadioButton();
+            radioButton2 = new RadioButton();
+            radioButton3 = new RadioButton();
+            label3 = new Label();
+            Nickname = new TextBox();
+            Bottonecontinua = new Button();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.label1.Location = new System.Drawing.Point(200, 126);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1179, 218);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Inserisci dati";
+            label1.AutoSize = true;
+            label1.Font = new Font("Bauhaus 93", 72F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(235, 94, 40);
+            label1.Location = new Point(108, 59);
+            label1.Name = "label1";
+            label1.Size = new Size(589, 108);
+            label1.TabIndex = 0;
+            label1.Text = "Inserisci dati";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.label2.Location = new System.Drawing.Point(163, 482);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(485, 108);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Difficoltà ";
+            label2.AutoSize = true;
+            label2.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(235, 94, 40);
+            label2.Location = new Point(88, 226);
+            label2.Name = "label2";
+            label2.Size = new Size(244, 54);
+            label2.TabIndex = 1;
+            label2.Text = "Difficoltà ";
             // 
             // radioButton1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Bauhaus 93", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.ForeColor = System.Drawing.Color.YellowGreen;
-            this.radioButton1.Location = new System.Drawing.Point(80, 629);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(6);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(167, 52);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Facile";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.AutoSize = true;
+            radioButton1.Font = new Font("Bauhaus 93", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            radioButton1.ForeColor = Color.YellowGreen;
+            radioButton1.Location = new Point(43, 295);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(86, 28);
+            radioButton1.TabIndex = 2;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Facile";
+            radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Bauhaus 93", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.ForeColor = System.Drawing.Color.Gold;
-            this.radioButton2.Location = new System.Drawing.Point(264, 629);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(6);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(205, 52);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Normale";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.AutoSize = true;
+            radioButton2.Font = new Font("Bauhaus 93", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            radioButton2.ForeColor = Color.Gold;
+            radioButton2.Location = new Point(142, 295);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(105, 28);
+            radioButton2.TabIndex = 3;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Normale";
+            radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Bauhaus 93", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton3.ForeColor = System.Drawing.Color.LightCoral;
-            this.radioButton3.Location = new System.Drawing.Point(470, 629);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(6);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(205, 52);
-            this.radioButton3.TabIndex = 4;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Difficile";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            radioButton3.AutoSize = true;
+            radioButton3.Font = new Font("Bauhaus 93", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            radioButton3.ForeColor = Color.LightCoral;
+            radioButton3.Location = new Point(253, 295);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new Size(105, 28);
+            radioButton3.TabIndex = 4;
+            radioButton3.TabStop = true;
+            radioButton3.Text = "Difficile";
+            radioButton3.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.label3.Location = new System.Drawing.Point(908, 482);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(471, 108);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Nickname";
+            label3.AutoSize = true;
+            label3.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.FromArgb(235, 94, 40);
+            label3.Location = new Point(489, 226);
+            label3.Name = "label3";
+            label3.Size = new Size(236, 54);
+            label3.TabIndex = 5;
+            label3.Text = "Nickname";
             // 
             // Nickname
             // 
-            this.Nickname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.Nickname.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Nickname.Location = new System.Drawing.Point(867, 627);
-            this.Nickname.Margin = new System.Windows.Forms.Padding(6);
-            this.Nickname.Name = "Nickname";
-            this.Nickname.Size = new System.Drawing.Size(569, 54);
-            this.Nickname.TabIndex = 6;
+            Nickname.BackColor = Color.FromArgb(255, 224, 192);
+            Nickname.Font = new Font("Bauhaus 93", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Nickname.Location = new Point(467, 294);
+            Nickname.Name = "Nickname";
+            Nickname.Size = new Size(308, 31);
+            Nickname.TabIndex = 6;
             // 
             // Bottonecontinua
             // 
-            this.Bottonecontinua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.Bottonecontinua.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Bottonecontinua.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Bottonecontinua.Location = new System.Drawing.Point(394, 806);
-            this.Bottonecontinua.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.Bottonecontinua.Name = "Bottonecontinua";
-            this.Bottonecontinua.Size = new System.Drawing.Size(734, 177);
-            this.Bottonecontinua.TabIndex = 7;
-            this.Bottonecontinua.Text = "Continua";
-            this.Bottonecontinua.UseVisualStyleBackColor = false;
-            this.Bottonecontinua.Click += new System.EventHandler(this.Bottonecontinua_Click);
+            Bottonecontinua.BackColor = Color.FromArgb(235, 94, 40);
+            Bottonecontinua.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            Bottonecontinua.ForeColor = Color.WhiteSmoke;
+            Bottonecontinua.Location = new Point(212, 378);
+            Bottonecontinua.Margin = new Padding(2, 1, 2, 1);
+            Bottonecontinua.Name = "Bottonecontinua";
+            Bottonecontinua.Size = new Size(395, 83);
+            Bottonecontinua.TabIndex = 7;
+            Bottonecontinua.Text = "Continua";
+            Bottonecontinua.UseVisualStyleBackColor = false;
+            Bottonecontinua.Click += Bottonecontinua_Click;
             // 
             // Dati
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(1558, 1090);
-            this.Controls.Add(this.Bottonecontinua);
-            this.Controls.Add(this.Nickname);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(6);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Dati";
-            this.Text = "Log-in";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Linen;
+            ClientSize = new Size(839, 497);
+            Controls.Add(Bottonecontinua);
+            Controls.Add(Nickname);
+            Controls.Add(label3);
+            Controls.Add(radioButton3);
+            Controls.Add(radioButton2);
+            Controls.Add(radioButton1);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Dati";
+            Text = "Log-in";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

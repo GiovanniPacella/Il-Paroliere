@@ -90,7 +90,7 @@ namespace Il_Paroliere.View
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(!fineTimer)
+            if (!fineTimer)
             {
                 int minuti = int.Parse(Timer.Text.Substring(0, 1));
                 int secondi = int.Parse(Timer.Text.Substring(2, 2));

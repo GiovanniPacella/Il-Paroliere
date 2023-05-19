@@ -20,12 +20,12 @@ namespace Il_Paroliere.View
 
         private void Bottonecontinua_Click(object sender, EventArgs e)
         {
-            string nickname= Nickname.Text;
-            if(nickname != "")
+            string nickname = Nickname.Text;
+            if (nickname != "")
             {
                 MainController controller = new MainController();
                 controller.setNicknameGiocatore(nickname);
-                int difficolta=0;
+                int difficolta = 0;
 
                 bool isChecked = radioButton1.Checked;
                 if (isChecked)

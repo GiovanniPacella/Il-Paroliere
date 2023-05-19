@@ -11,7 +11,7 @@ namespace Il_Paroliere
         public Menu()
         {
             InitializeComponent();
-            
+
             sound.PlayLooping();
 
         }

@@ -28,87 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.Punti = new System.Windows.Forms.Label();
-            this.bottoneUscita = new System.Windows.Forms.Button();
-            this.bottoneMenu = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FinePartita));
+            label1 = new Label();
+            Punti = new Label();
+            bottoneUscita = new Button();
+            bottoneMenu = new Button();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(120, 34);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(810, 145);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "FINE PARTITA";
+            label1.AutoSize = true;
+            label1.Font = new Font("Bauhaus 93", 48F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(235, 94, 40);
+            label1.ImageAlign = ContentAlignment.TopCenter;
+            label1.Location = new Point(65, 16);
+            label1.Margin = new Padding(0);
+            label1.Name = "label1";
+            label1.Size = new Size(406, 73);
+            label1.TabIndex = 1;
+            label1.Text = "FINE PARTITA";
             // 
             // Punti
             // 
-            this.Punti.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Punti.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.Punti.Location = new System.Drawing.Point(391, 226);
-            this.Punti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Punti.Name = "Punti";
-            this.Punti.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Punti.Size = new System.Drawing.Size(322, 181);
-            this.Punti.TabIndex = 34;
-            this.Punti.Text = "000";
-            this.Punti.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Punti.UseMnemonic = false;
+            Punti.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            Punti.ForeColor = Color.FromArgb(235, 94, 40);
+            Punti.Location = new Point(199, 105);
+            Punti.Margin = new Padding(2, 0, 2, 0);
+            Punti.Name = "Punti";
+            Punti.RightToLeft = RightToLeft.No;
+            Punti.Size = new Size(173, 85);
+            Punti.TabIndex = 34;
+            Punti.Text = "000";
+            Punti.TextAlign = ContentAlignment.MiddleCenter;
+            Punti.UseMnemonic = false;
             // 
             // bottoneUscita
             // 
-            this.bottoneUscita.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bottoneUscita.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bottoneUscita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.bottoneUscita.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bottoneUscita.Location = new System.Drawing.Point(542, 480);
-            this.bottoneUscita.Margin = new System.Windows.Forms.Padding(0);
-            this.bottoneUscita.Name = "bottoneUscita";
-            this.bottoneUscita.Size = new System.Drawing.Size(360, 163);
-            this.bottoneUscita.TabIndex = 35;
-            this.bottoneUscita.Text = "Esci";
-            this.bottoneUscita.UseVisualStyleBackColor = false;
-            this.bottoneUscita.Click += new System.EventHandler(this.bottoneUscita_Click);
+            bottoneUscita.BackColor = Color.WhiteSmoke;
+            bottoneUscita.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            bottoneUscita.ForeColor = Color.FromArgb(235, 94, 40);
+            bottoneUscita.ImageAlign = ContentAlignment.TopCenter;
+            bottoneUscita.Location = new Point(292, 225);
+            bottoneUscita.Margin = new Padding(0);
+            bottoneUscita.Name = "bottoneUscita";
+            bottoneUscita.Size = new Size(194, 76);
+            bottoneUscita.TabIndex = 35;
+            bottoneUscita.Text = "Esci";
+            bottoneUscita.UseVisualStyleBackColor = false;
+            bottoneUscita.Click += bottoneUscita_Click;
             // 
             // bottoneMenu
             // 
-            this.bottoneMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bottoneMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.bottoneMenu.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bottoneMenu.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bottoneMenu.Location = new System.Drawing.Point(120, 480);
-            this.bottoneMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.bottoneMenu.Name = "bottoneMenu";
-            this.bottoneMenu.Size = new System.Drawing.Size(400, 163);
-            this.bottoneMenu.TabIndex = 36;
-            this.bottoneMenu.Text = "Menu";
-            this.bottoneMenu.UseVisualStyleBackColor = false;
-            this.bottoneMenu.Click += new System.EventHandler(this.bottoneMenu_Click);
+            bottoneMenu.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            bottoneMenu.BackColor = Color.FromArgb(235, 94, 40);
+            bottoneMenu.Font = new Font("Bauhaus 93", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            bottoneMenu.ForeColor = Color.WhiteSmoke;
+            bottoneMenu.Location = new Point(65, 225);
+            bottoneMenu.Margin = new Padding(0);
+            bottoneMenu.Name = "bottoneMenu";
+            bottoneMenu.Size = new Size(215, 76);
+            bottoneMenu.TabIndex = 36;
+            bottoneMenu.Text = "Menu";
+            bottoneMenu.UseVisualStyleBackColor = false;
+            bottoneMenu.Click += bottoneMenu_Click;
             // 
             // FinePartita
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(1054, 679);
-            this.Controls.Add(this.bottoneMenu);
-            this.Controls.Add(this.bottoneUscita);
-            this.Controls.Add(this.Punti);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FinePartita";
-            this.Text = "Fine";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Linen;
+            ClientSize = new Size(568, 318);
+            Controls.Add(bottoneMenu);
+            Controls.Add(bottoneUscita);
+            Controls.Add(Punti);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2, 1, 2, 1);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FinePartita";
+            Text = "Fine";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

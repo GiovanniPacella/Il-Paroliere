@@ -7,6 +7,7 @@ namespace Il_Paroliere
     {
         private static string nicknameGiocatore;
         private static int difficolta;
+        private static int punteggio;   
 
         public void setNicknameGiocatore(string nickname)
         {
@@ -23,6 +24,14 @@ namespace Il_Paroliere
         public int getDifficolta()
         {
             return difficolta;
+        }
+        public void setPunteggio(int p)
+        {
+            punteggio = p;
+        }
+        public int getPunteggio()
+        {
+            return punteggio;
         }
 
         /// <summary>

@@ -14,10 +14,25 @@ namespace Il_Paroliere.View
     public partial class Gioco : Form
     {
         MainModel Model = new MainModel();
-        int val = 60;
+        MainController Controller = new MainController();
+        private bool fineTimer = false;
         public Gioco()
         {
             InitializeComponent();
+
+            switch (Controller.getDifficolta())
+            {
+                case 1:
+                    Timer.Text = "2:30";
+                    break;
+                case 2:
+                    Timer.Text = "2:00";
+                    break;
+                case 3:
+                    Timer.Text = "1:30";
+                    break;
+            }
+
             char[,] board = Model.getBoard();
             button1.Text = Char.ToString(board[0, 0]);
             button2.Text = Char.ToString(board[0, 1]);
@@ -61,6 +76,7 @@ namespace Il_Paroliere.View
                 {
                     Ricerca.Clear();
                     Trovate.Items.Add(parolaInserita);
+                    Punti.Text = (int.Parse(Punti.Text) + Model.getPunteggio(parolaInserita, Controller.getDifficolta())).ToString();
                 }
                 else
                 {
@@ -71,8 +87,36 @@ namespace Il_Paroliere.View
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            int tempo = val--;
-            Timer.Text = "00:" + tempo.ToString();
+            if(!fineTimer)
+            {
+                int minuti = int.Parse(Timer.Text.Substring(0, 1));
+                int secondi = int.Parse(Timer.Text.Substring(2, 2));
+                if (secondi == 0)
+                {
+                    if (minuti > 0)
+                    {
+                        --minuti;
+                        secondi = 60;
+                    }
+                    else
+                    {
+                        fineTimer = true;
+                        this.Hide();
+                        var finePartita = new FinePartita();
+                        finePartita.Closed += (s, args) => this.Close();
+                        finePartita.Show();
+                    }
+                }
+                --secondi;
+                if (secondi < 10)
+                {
+                    Timer.Text = minuti.ToString() + ":0" + secondi.ToString();
+                }
+                else
+                {
+                    Timer.Text = minuti.ToString() + ":" + secondi.ToString();
+                }
+            }
             //Precario
         }
 

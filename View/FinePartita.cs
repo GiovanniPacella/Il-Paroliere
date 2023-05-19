@@ -15,6 +15,10 @@ namespace Il_Paroliere.View
         public FinePartita()
         {
             InitializeComponent();
+            MainController controller= new MainController();
+            int punteggio = controller.getPunteggio();
+            Punti.Text = punteggio.ToString();
+
         }
 
         private void bottoneMenu_Click(object sender, EventArgs e)

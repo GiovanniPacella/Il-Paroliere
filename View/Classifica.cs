@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Media;
 
 namespace Il_Paroliere.View
 {
@@ -18,9 +19,13 @@ namespace Il_Paroliere.View
         public Classifica()
         {
             InitializeComponent();
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.classifica);
+            sound.PlayLooping();
+
+
             Connection con = new Connection();
             con.connOpen();
-            string query = "SELECT * FROM partitagpo ORDER BY punteggio DESC LIMIT 8;";
+            string query = "SELECT * FROM partitagpo ORDER BY punteggio DESC, paroleTrovate DESC LIMIT 8;";
             MySqlDataReader reader = con.querySelect(query);
             int i = 0;
             while (reader.Read())

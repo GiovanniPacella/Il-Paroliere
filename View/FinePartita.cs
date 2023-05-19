@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Il_Paroliere.Control;
+using Il_Paroliere.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,13 +18,26 @@ namespace Il_Paroliere.View
         public FinePartita()
         {
             InitializeComponent();
-            SoundPlayer sound = new SoundPlayer(Properties.Resources.gioco);
-            sound.Stop();
-            MainController controller = new MainController();
-            int punteggio = controller.getPunteggio();
-            Punti.Text = punteggio.ToString();
             
+            MainController controller = new MainController();
+            MainModel model = new MainModel(); 
+            Connection con = new Connection();
+            int punteggio = controller.getPunteggio();
+            int numParoleTrovate = controller.getNumParole();
+            string nomeGiocatore = controller.getNicknameGiocatore();
 
+            string query = "INSERT INTO partitagpo (ID, punteggio, paroleTrovate, nomeGiocatore) VALUES (NULL, '"+punteggio+"', '"+numParoleTrovate+"', '"+nomeGiocatore+"');";
+            if(con.connOpen())
+            {
+                con.queryGenerica(query);
+                con.connClose();
+            }
+            else
+            {
+                MessageBox.Show("Connessione al database non riuscita!", "Errore connessione", MessageBoxButtons.OK);
+
+            }
+            Punti.Text = punteggio.ToString();
         }
 
         private void bottoneMenu_Click(object sender, EventArgs e)

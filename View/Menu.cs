@@ -25,6 +25,7 @@ namespace Il_Paroliere
             Connection con = new Connection();
             if (con.connOpen())
             {
+                sound.Stop();
                 this.Hide();
                 var classifica = new Classifica();
                 classifica.Closed += (s, args) => this.Close();
@@ -32,7 +33,7 @@ namespace Il_Paroliere
             }
             else
             {
-                MessageBox.Show("Connessione al database non disponibile!", "Errore connessione", MessageBoxButtons.OK);
+                MessageBox.Show("Connessione al database non riuscita!", "Errore connessione", MessageBoxButtons.OK);
             }
         }
 

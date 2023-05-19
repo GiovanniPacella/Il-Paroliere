@@ -257,7 +257,10 @@ namespace Il_Paroliere.View
                     else
                     {
                         fineTimer = true;
+                        SoundPlayer sound = new SoundPlayer(Properties.Resources.gioco);
+                        sound.Stop();
                         Controller.setPunteggio(int.Parse(Punti.Text));
+                        Controller.setNumParole(Model.getNumeroParole());
                         this.Hide();
                         var finePartita = new FinePartita();
                         finePartita.Closed += (s, args) => this.Close();

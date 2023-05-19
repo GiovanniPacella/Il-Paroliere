@@ -8,7 +8,7 @@ namespace Il_Paroliere
         private static string nicknameGiocatore;
         private static int numParole; 
         private static int difficolta;
-        private static int punteggio;   
+        private static int punteggio; 
 
         public void setNicknameGiocatore(string nickname)
         {

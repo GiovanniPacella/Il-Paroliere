@@ -201,5 +201,10 @@ namespace Il_Paroliere.Model
             return -1;
         }
 
+        public int getNumeroParole()
+        {
+            return paroleTrovate.Count;
+        }
+
     }
 }

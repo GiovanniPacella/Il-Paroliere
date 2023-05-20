@@ -89,7 +89,7 @@
             this.Titolo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Titolo.Name = "Titolo";
             this.Titolo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Titolo.Size = new System.Drawing.Size(838, 371);
+            this.Titolo.Size = new System.Drawing.Size(840, 371);
             this.Titolo.TabIndex = 1;
             this.Titolo.Text = "JUICE WORD";
             this.Titolo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,7 +108,8 @@
             // 
             // Menu
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1558, 1060);

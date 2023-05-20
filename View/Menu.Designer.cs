@@ -98,11 +98,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Il_Paroliere.Properties.Resources.Due__3_;
-            this.pictureBox1.Location = new System.Drawing.Point(914, 58);
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(965, 92);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(423, 299);
+            this.pictureBox1.Size = new System.Drawing.Size(243, 232);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 

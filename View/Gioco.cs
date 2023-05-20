@@ -222,23 +222,10 @@ namespace Il_Paroliere.View
             Ricerca.Text = Ricerca.Text + carattere;
         }
 
-        private void button26_Click(object sender, EventArgs e)
+
+        private void Reset_Click(object sender, EventArgs e)
         {
-            string parolaInserita = Ricerca.Text;
-            if (parolaInserita != "")
-            {
-                bool isParolaCorretta = Model.isParolaTrovata(parolaInserita.ToUpper());
-                if (isParolaCorretta)
-                {
-                    Ricerca.Clear();
-                    Trovate.Items.Add(parolaInserita.ToUpper());
-                    Punti.Text = (int.Parse(Punti.Text) + Model.getPunteggio(parolaInserita, Controller.getDifficolta())).ToString();
-                }
-                else
-                {
-                    MessageBox.Show("Parola non trovata!", "Errore", MessageBoxButtons.OK);
-                }
-            }
+            Ricerca.Clear();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -280,9 +267,23 @@ namespace Il_Paroliere.View
             }
         }
 
-        private void Reset_Click(object sender, EventArgs e)
+        private void button26_Click(object sender, EventArgs e)
         {
-            Ricerca.Clear();
+            string parolaInserita = Ricerca.Text;
+            if (parolaInserita != "")
+            {
+                bool isParolaCorretta = Model.isParolaTrovata(parolaInserita.ToUpper());
+                if (isParolaCorretta)
+                {
+                    Ricerca.Clear();
+                    Trovate.Items.Add(parolaInserita.ToUpper());
+                    Punti.Text = (int.Parse(Punti.Text) + Model.getPunteggio(parolaInserita, Controller.getDifficolta())).ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Parola non trovata!", "Errore", MessageBoxButtons.OK);
+                }
+            }
         }
     }
 

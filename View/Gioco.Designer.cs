@@ -420,6 +420,7 @@
             this.button26.TabIndex = 30;
             this.button26.Text = "Invia";
             this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // Ricerca
             // 
@@ -507,6 +508,7 @@
             // timer1
             // 
             this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Reset
             // 
@@ -521,6 +523,7 @@
             this.Reset.TabIndex = 36;
             this.Reset.Text = "Reset";
             this.Reset.UseVisualStyleBackColor = false;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
             // Gioco
             // 

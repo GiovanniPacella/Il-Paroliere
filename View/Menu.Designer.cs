@@ -85,7 +85,7 @@
             // 
             this.Titolo.Font = new System.Drawing.Font("Bauhaus 93", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Titolo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.Titolo.Location = new System.Drawing.Point(163, 19);
+            this.Titolo.Location = new System.Drawing.Point(280, 19);
             this.Titolo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Titolo.Name = "Titolo";
             this.Titolo.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -98,11 +98,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(1066, 90);
+            this.pictureBox1.BackgroundImage = global::Il_Paroliere.Properties.Resources.Due__3_;
+            this.pictureBox1.Location = new System.Drawing.Point(1128, 140);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 232);
+            this.pictureBox1.Size = new System.Drawing.Size(159, 145);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 

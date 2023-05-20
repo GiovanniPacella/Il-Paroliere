@@ -49,6 +49,7 @@ namespace Il_Paroliere.Model
         {
             if (isInDatabase(x) && isCorretta(x))
             {
+                paroleTrovate.Add(parolaTrovata);
                 return true;
             }
             else
@@ -78,7 +79,6 @@ namespace Il_Paroliere.Model
             this.parolaTrovata = x.ToUpper();
             if (isPrimoCaratterePresente(x[0]) && !isParolaGiàTrovata(x))
             {
-                paroleTrovate.Add(parolaTrovata);
                 return true;
             }
             else
@@ -121,7 +121,6 @@ namespace Il_Paroliere.Model
             }
             if (controllaRicerca())
             {
-                paroleTrovate.Clear();
                 return true;
             }
             return false;
@@ -206,6 +205,13 @@ namespace Il_Paroliere.Model
         {
             return paroleTrovate.Count;
         }
+
+        public void pulisciParoleTrovate()
+        {
+            this.paroleTrovate.Clear();
+            
+        }
+
 
     }
 }

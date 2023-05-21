@@ -65,17 +65,18 @@
             this.Trovate = new System.Windows.Forms.ListBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Reset = new System.Windows.Forms.Button();
+            this.timerLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Titolo
             // 
-            this.Titolo.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Titolo.Font = new System.Drawing.Font("Bauhaus 93", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Titolo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.Titolo.Location = new System.Drawing.Point(38, 0);
+            this.Titolo.Location = new System.Drawing.Point(11, 0);
             this.Titolo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Titolo.Name = "Titolo";
             this.Titolo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Titolo.Size = new System.Drawing.Size(983, 112);
+            this.Titolo.Size = new System.Drawing.Size(1490, 242);
             this.Titolo.TabIndex = 2;
             this.Titolo.Text = "JUICE WORD";
             this.Titolo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -84,11 +85,11 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(74, 188);
+            this.button1.Location = new System.Drawing.Point(66, 279);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 75);
+            this.button1.Size = new System.Drawing.Size(120, 120);
             this.button1.TabIndex = 3;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
@@ -96,11 +97,11 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button2.Location = new System.Drawing.Point(155, 188);
+            this.button2.Location = new System.Drawing.Point(192, 279);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 75);
+            this.button2.Size = new System.Drawing.Size(120, 120);
             this.button2.TabIndex = 4;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = false;
@@ -108,11 +109,11 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.Location = new System.Drawing.Point(236, 188);
+            this.button3.Location = new System.Drawing.Point(318, 279);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 75);
+            this.button3.Size = new System.Drawing.Size(120, 120);
             this.button3.TabIndex = 5;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = false;
@@ -120,11 +121,11 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button4.Location = new System.Drawing.Point(317, 188);
+            this.button4.Location = new System.Drawing.Point(444, 279);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 75);
+            this.button4.Size = new System.Drawing.Size(120, 120);
             this.button4.TabIndex = 6;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
@@ -132,11 +133,11 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button5.Location = new System.Drawing.Point(398, 188);
+            this.button5.Location = new System.Drawing.Point(570, 279);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 75);
+            this.button5.Size = new System.Drawing.Size(120, 120);
             this.button5.TabIndex = 7;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
@@ -144,11 +145,11 @@
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button10.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button10.Location = new System.Drawing.Point(398, 269);
+            this.button10.Location = new System.Drawing.Point(570, 405);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 75);
+            this.button10.Size = new System.Drawing.Size(120, 120);
             this.button10.TabIndex = 12;
             this.button10.Text = "10";
             this.button10.UseVisualStyleBackColor = false;
@@ -156,11 +157,11 @@
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button9.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button9.Location = new System.Drawing.Point(317, 269);
+            this.button9.Location = new System.Drawing.Point(444, 405);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 75);
+            this.button9.Size = new System.Drawing.Size(120, 120);
             this.button9.TabIndex = 11;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = false;
@@ -168,11 +169,11 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button8.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button8.Location = new System.Drawing.Point(236, 269);
+            this.button8.Location = new System.Drawing.Point(318, 405);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 75);
+            this.button8.Size = new System.Drawing.Size(120, 120);
             this.button8.TabIndex = 10;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = false;
@@ -180,11 +181,11 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button7.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button7.Location = new System.Drawing.Point(155, 269);
+            this.button7.Location = new System.Drawing.Point(192, 405);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 75);
+            this.button7.Size = new System.Drawing.Size(120, 120);
             this.button7.TabIndex = 9;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = false;
@@ -192,11 +193,11 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button6.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button6.Location = new System.Drawing.Point(74, 269);
+            this.button6.Location = new System.Drawing.Point(66, 405);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 75);
+            this.button6.Size = new System.Drawing.Size(120, 120);
             this.button6.TabIndex = 8;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
@@ -204,11 +205,11 @@
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button15.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button15.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button15.Location = new System.Drawing.Point(398, 349);
+            this.button15.Location = new System.Drawing.Point(570, 531);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 75);
+            this.button15.Size = new System.Drawing.Size(120, 120);
             this.button15.TabIndex = 17;
             this.button15.Text = "15";
             this.button15.UseVisualStyleBackColor = false;
@@ -216,11 +217,11 @@
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button14.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button14.Location = new System.Drawing.Point(317, 349);
+            this.button14.Location = new System.Drawing.Point(444, 531);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 75);
+            this.button14.Size = new System.Drawing.Size(120, 120);
             this.button14.TabIndex = 16;
             this.button14.Text = "14";
             this.button14.UseVisualStyleBackColor = false;
@@ -228,11 +229,11 @@
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button13.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button13.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button13.Location = new System.Drawing.Point(236, 349);
+            this.button13.Location = new System.Drawing.Point(318, 531);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 75);
+            this.button13.Size = new System.Drawing.Size(120, 120);
             this.button13.TabIndex = 15;
             this.button13.Text = "13";
             this.button13.UseVisualStyleBackColor = false;
@@ -240,11 +241,11 @@
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button12.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button12.Location = new System.Drawing.Point(155, 349);
+            this.button12.Location = new System.Drawing.Point(192, 531);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 75);
+            this.button12.Size = new System.Drawing.Size(120, 120);
             this.button12.TabIndex = 14;
             this.button12.Text = "12";
             this.button12.UseVisualStyleBackColor = false;
@@ -252,11 +253,11 @@
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button11.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button11.Location = new System.Drawing.Point(74, 349);
+            this.button11.Location = new System.Drawing.Point(66, 531);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 75);
+            this.button11.Size = new System.Drawing.Size(120, 120);
             this.button11.TabIndex = 13;
             this.button11.Text = "11";
             this.button11.UseVisualStyleBackColor = false;
@@ -264,11 +265,11 @@
             // button20
             // 
             this.button20.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button20.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button20.Location = new System.Drawing.Point(398, 430);
+            this.button20.Location = new System.Drawing.Point(570, 657);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 75);
+            this.button20.Size = new System.Drawing.Size(120, 120);
             this.button20.TabIndex = 22;
             this.button20.Text = "20";
             this.button20.UseVisualStyleBackColor = false;
@@ -276,11 +277,11 @@
             // button19
             // 
             this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button19.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button19.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button19.Location = new System.Drawing.Point(317, 430);
+            this.button19.Location = new System.Drawing.Point(444, 657);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 75);
+            this.button19.Size = new System.Drawing.Size(120, 120);
             this.button19.TabIndex = 21;
             this.button19.Text = "19";
             this.button19.UseVisualStyleBackColor = false;
@@ -288,11 +289,11 @@
             // button18
             // 
             this.button18.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button18.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button18.Location = new System.Drawing.Point(236, 430);
+            this.button18.Location = new System.Drawing.Point(318, 657);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 75);
+            this.button18.Size = new System.Drawing.Size(120, 120);
             this.button18.TabIndex = 20;
             this.button18.Text = "18";
             this.button18.UseVisualStyleBackColor = false;
@@ -300,11 +301,11 @@
             // button17
             // 
             this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button17.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button17.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button17.Location = new System.Drawing.Point(155, 430);
+            this.button17.Location = new System.Drawing.Point(192, 657);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 75);
+            this.button17.Size = new System.Drawing.Size(120, 120);
             this.button17.TabIndex = 19;
             this.button17.Text = "17";
             this.button17.UseVisualStyleBackColor = false;
@@ -312,11 +313,11 @@
             // button16
             // 
             this.button16.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button16.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button16.Location = new System.Drawing.Point(74, 430);
+            this.button16.Location = new System.Drawing.Point(66, 657);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 75);
+            this.button16.Size = new System.Drawing.Size(120, 120);
             this.button16.TabIndex = 18;
             this.button16.Text = "16";
             this.button16.UseVisualStyleBackColor = false;
@@ -324,12 +325,12 @@
             // button25
             // 
             this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button25.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button25.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button25.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button25.Location = new System.Drawing.Point(398, 511);
+            this.button25.Location = new System.Drawing.Point(570, 783);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(75, 75);
+            this.button25.Size = new System.Drawing.Size(120, 120);
             this.button25.TabIndex = 27;
             this.button25.Text = "25";
             this.button25.UseVisualStyleBackColor = false;
@@ -337,11 +338,11 @@
             // button24
             // 
             this.button24.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button24.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button24.Location = new System.Drawing.Point(317, 511);
+            this.button24.Location = new System.Drawing.Point(444, 783);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 75);
+            this.button24.Size = new System.Drawing.Size(120, 120);
             this.button24.TabIndex = 26;
             this.button24.Text = "24";
             this.button24.UseVisualStyleBackColor = false;
@@ -349,11 +350,11 @@
             // button23
             // 
             this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button23.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button23.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button23.Location = new System.Drawing.Point(236, 511);
+            this.button23.Location = new System.Drawing.Point(318, 783);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 75);
+            this.button23.Size = new System.Drawing.Size(120, 120);
             this.button23.TabIndex = 25;
             this.button23.Text = "23";
             this.button23.UseVisualStyleBackColor = false;
@@ -361,11 +362,11 @@
             // button22
             // 
             this.button22.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button22.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button22.Location = new System.Drawing.Point(155, 511);
+            this.button22.Location = new System.Drawing.Point(192, 783);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 75);
+            this.button22.Size = new System.Drawing.Size(120, 120);
             this.button22.TabIndex = 24;
             this.button22.Text = "22";
             this.button22.UseVisualStyleBackColor = false;
@@ -373,11 +374,11 @@
             // button21
             // 
             this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button21.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button21.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button21.Location = new System.Drawing.Point(74, 511);
+            this.button21.Location = new System.Drawing.Point(66, 783);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 75);
+            this.button21.Size = new System.Drawing.Size(120, 120);
             this.button21.TabIndex = 23;
             this.button21.Text = "21";
             this.button21.UseVisualStyleBackColor = false;
@@ -385,13 +386,13 @@
             // button26
             // 
             this.button26.BackColor = System.Drawing.Color.Linen;
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button26.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.button26.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button26.Location = new System.Drawing.Point(146, 660);
+            this.button26.Location = new System.Drawing.Point(192, 1042);
             this.button26.Margin = new System.Windows.Forms.Padding(0);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(113, 79);
+            this.button26.Size = new System.Drawing.Size(159, 110);
             this.button26.TabIndex = 30;
             this.button26.Text = "Invia";
             this.button26.UseVisualStyleBackColor = false;
@@ -401,23 +402,23 @@
             // 
             this.Ricerca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.Ricerca.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Ricerca.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Ricerca.Location = new System.Drawing.Point(74, 614);
+            this.Ricerca.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Ricerca.Location = new System.Drawing.Point(66, 959);
             this.Ricerca.Multiline = false;
             this.Ricerca.Name = "Ricerca";
-            this.Ricerca.Size = new System.Drawing.Size(399, 43);
+            this.Ricerca.Size = new System.Drawing.Size(624, 68);
             this.Ricerca.TabIndex = 29;
             this.Ricerca.Text = "";
             // 
             // Timer
             // 
-            this.Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Timer.Font = new System.Drawing.Font("Bauhaus 93", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Timer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.Timer.Location = new System.Drawing.Point(508, 130);
+            this.Timer.Location = new System.Drawing.Point(866, 375);
             this.Timer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Timer.Name = "Timer";
             this.Timer.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Timer.Size = new System.Drawing.Size(210, 112);
+            this.Timer.Size = new System.Drawing.Size(267, 112);
             this.Timer.TabIndex = 31;
             this.Timer.Text = "00:00";
             this.Timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -425,9 +426,9 @@
             // 
             // PuntiT
             // 
-            this.PuntiT.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PuntiT.Font = new System.Drawing.Font("Bauhaus 93", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PuntiT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.PuntiT.Location = new System.Drawing.Point(784, 112);
+            this.PuntiT.Location = new System.Drawing.Point(1223, 281);
             this.PuntiT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PuntiT.Name = "PuntiT";
             this.PuntiT.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -439,9 +440,9 @@
             // 
             // Punti
             // 
-            this.Punti.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Punti.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Punti.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.Punti.Location = new System.Drawing.Point(784, 167);
+            this.Punti.Location = new System.Drawing.Point(1223, 375);
             this.Punti.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Punti.Name = "Punti";
             this.Punti.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -453,13 +454,13 @@
             // 
             // Tittrov
             // 
-            this.Tittrov.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Tittrov.Font = new System.Drawing.Font("Bauhaus 93", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Tittrov.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.Tittrov.Location = new System.Drawing.Point(487, 279);
+            this.Tittrov.Location = new System.Drawing.Point(883, 520);
             this.Tittrov.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Tittrov.Name = "Tittrov";
             this.Tittrov.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Tittrov.Size = new System.Drawing.Size(466, 75);
+            this.Tittrov.Size = new System.Drawing.Size(550, 75);
             this.Tittrov.TabIndex = 34;
             this.Tittrov.Text = "Corrette";
             this.Tittrov.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -469,13 +470,13 @@
             // 
             this.Trovate.BackColor = System.Drawing.Color.Linen;
             this.Trovate.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Trovate.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Trovate.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Trovate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
             this.Trovate.FormattingEnabled = true;
-            this.Trovate.ItemHeight = 31;
-            this.Trovate.Location = new System.Drawing.Point(487, 357);
+            this.Trovate.ItemHeight = 60;
+            this.Trovate.Location = new System.Drawing.Point(883, 637);
             this.Trovate.Name = "Trovate";
-            this.Trovate.Size = new System.Drawing.Size(466, 217);
+            this.Trovate.Size = new System.Drawing.Size(590, 480);
             this.Trovate.TabIndex = 35;
             // 
             // timer1
@@ -486,24 +487,39 @@
             // Reset
             // 
             this.Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
-            this.Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Reset.Font = new System.Drawing.Font("Bauhaus 93", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Reset.ForeColor = System.Drawing.Color.Linen;
             this.Reset.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Reset.Location = new System.Drawing.Point(267, 660);
+            this.Reset.Location = new System.Drawing.Point(369, 1042);
             this.Reset.Margin = new System.Windows.Forms.Padding(0);
             this.Reset.Name = "Reset";
-            this.Reset.Size = new System.Drawing.Size(125, 79);
+            this.Reset.Size = new System.Drawing.Size(195, 110);
             this.Reset.TabIndex = 36;
             this.Reset.Text = "Reset";
             this.Reset.UseVisualStyleBackColor = false;
             this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
+            // timerLabel
+            // 
+            this.timerLabel.Font = new System.Drawing.Font("Bauhaus 93", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(94)))), ((int)(((byte)(40)))));
+            this.timerLabel.Location = new System.Drawing.Point(883, 281);
+            this.timerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.timerLabel.Name = "timerLabel";
+            this.timerLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.timerLabel.Size = new System.Drawing.Size(226, 75);
+            this.timerLabel.TabIndex = 37;
+            this.timerLabel.Text = "Timer";
+            this.timerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.timerLabel.UseMnemonic = false;
+            // 
             // Gioco
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(1036, 751);
+            this.ClientSize = new System.Drawing.Size(1512, 1192);
+            this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.Trovate);
             this.Controls.Add(this.Tittrov);
@@ -587,5 +603,6 @@
         private ListBox Trovate;
         private System.Windows.Forms.Timer timer1;
         private Button Reset;
+        private Label timerLabel;
     }
 }

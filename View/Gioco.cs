@@ -72,6 +72,72 @@ namespace Il_Paroliere.View
 
 
         //Click al singolo bottone
+       
+
+
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            Ricerca.Clear();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (!fineTimer)
+            {
+                int minuti = int.Parse(Timer.Text.Substring(0, 1));
+                int secondi = int.Parse(Timer.Text.Substring(2, 2));
+                if (secondi == 0)
+                {
+                    if (minuti > 0)
+                    {
+                        --minuti;
+                        secondi = 60;
+                    }
+                    else
+                    {
+                        fineTimer = true;
+                        SoundPlayer sound = new SoundPlayer(Properties.Resources.gioco);
+                        sound.Stop();
+                        Controller.setPunteggio(int.Parse(Punti.Text));
+                        Controller.setNumParole(Model.getNumeroParole());
+                        Model.pulisciParoleTrovate();
+                        this.Hide();
+                        var finePartita = new FinePartita();
+                        finePartita.Closed += (s, args) => this.Close();
+                        finePartita.Show();
+                    }
+                }
+                --secondi;
+                if (secondi < 10)
+                {
+                    Timer.Text = minuti.ToString() + ":0" + secondi.ToString();
+                }
+                else
+                {
+                    Timer.Text = minuti.ToString() + ":" + secondi.ToString();
+                }
+            }
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            string parolaInserita = Ricerca.Text;
+            if (parolaInserita != "")
+            {
+                bool isParolaCorretta = Model.isParolaTrovata(parolaInserita.ToUpper());
+                if (isParolaCorretta)
+                {
+                    Ricerca.Clear();
+                    Trovate.Items.Add(parolaInserita.ToUpper());
+                    Punti.Text = (int.Parse(Punti.Text) + Model.getPunteggio(parolaInserita, Controller.getDifficolta())).ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Parola non trovata!", "Errore", MessageBoxButtons.OK);
+                }
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string carattere = button1.Text;
@@ -220,70 +286,6 @@ namespace Il_Paroliere.View
         {
             string carattere = button25.Text;
             Ricerca.Text = Ricerca.Text + carattere;
-        }
-
-
-        private void Reset_Click(object sender, EventArgs e)
-        {
-            Ricerca.Clear();
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (!fineTimer)
-            {
-                int minuti = int.Parse(Timer.Text.Substring(0, 1));
-                int secondi = int.Parse(Timer.Text.Substring(2, 2));
-                if (secondi == 0)
-                {
-                    if (minuti > 0)
-                    {
-                        --minuti;
-                        secondi = 60;
-                    }
-                    else
-                    {
-                        fineTimer = true;
-                        SoundPlayer sound = new SoundPlayer(Properties.Resources.gioco);
-                        sound.Stop();
-                        Controller.setPunteggio(int.Parse(Punti.Text));
-                        Controller.setNumParole(Model.getNumeroParole());
-                        Model.pulisciParoleTrovate();
-                        this.Hide();
-                        var finePartita = new FinePartita();
-                        finePartita.Closed += (s, args) => this.Close();
-                        finePartita.Show();
-                    }
-                }
-                --secondi;
-                if (secondi < 10)
-                {
-                    Timer.Text = minuti.ToString() + ":0" + secondi.ToString();
-                }
-                else
-                {
-                    Timer.Text = minuti.ToString() + ":" + secondi.ToString();
-                }
-            }
-        }
-
-        private void button26_Click(object sender, EventArgs e)
-        {
-            string parolaInserita = Ricerca.Text;
-            if (parolaInserita != "")
-            {
-                bool isParolaCorretta = Model.isParolaTrovata(parolaInserita.ToUpper());
-                if (isParolaCorretta)
-                {
-                    Ricerca.Clear();
-                    Trovate.Items.Add(parolaInserita.ToUpper());
-                    Punti.Text = (int.Parse(Punti.Text) + Model.getPunteggio(parolaInserita, Controller.getDifficolta())).ToString();
-                }
-                else
-                {
-                    MessageBox.Show("Parola non trovata!", "Errore", MessageBoxButtons.OK);
-                }
-            }
         }
     }
 

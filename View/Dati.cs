@@ -23,30 +23,38 @@ namespace Il_Paroliere.View
             string nickname = Nickname.Text;
             if (nickname != "")
             {
-                MainController controller = new MainController();
-                controller.setNicknameGiocatore(nickname);
-                int difficolta = 0;
+                if(nickname.Length > 20) 
+                {
+                    MessageBox.Show("Nickname troppo lungo!", "Errore", MessageBoxButtons.OK);
 
-                bool isChecked = radioButton1.Checked;
-                if (isChecked)
-                    difficolta = 1;
+                }
+                else
+                {
+                    MainController controller = new MainController();
+                    controller.setNicknameGiocatore(nickname);
+                    int difficolta = 0;
 
-                isChecked = radioButton2.Checked;
-                if (isChecked)
-                    difficolta = 2;
+                    bool isChecked = radioButton1.Checked;
+                    if (isChecked)
+                        difficolta = 1;
 
-                isChecked = radioButton3.Checked;
-                if (isChecked)
-                    difficolta = 3;
+                    isChecked = radioButton2.Checked;
+                    if (isChecked)
+                        difficolta = 2;
 
-                controller.setDifficolta(difficolta);
+                    isChecked = radioButton3.Checked;
+                    if (isChecked)
+                        difficolta = 3;
 
-                SoundPlayer sound = new SoundPlayer(Properties.Resources.title);
-                sound.Stop();
-                this.Hide();
-                var gioca = new Gioco();
-                gioca.Closed += (s, args) => this.Close();
-                gioca.Show();
+                    controller.setDifficolta(difficolta);
+
+                    SoundPlayer sound = new SoundPlayer(Properties.Resources.title);
+                    sound.Stop();
+                    this.Hide();
+                    var gioca = new Gioco();
+                    gioca.Closed += (s, args) => this.Close();
+                    gioca.Show();
+                }
             }
             else
             {
